@@ -1,0 +1,33 @@
+fileFormatVersion: 2
+guid: 07380b76b61dbdc4cac988495a0a065d
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: _MapPrfab/TestOverhead
+    100002: _MapPrfab/TestOverhead/Grid
+    400000: _MapPrfab/TestOverhead/Transform
+    400002: _MapPrfab/TestOverhead/Grid/Transform
+    11400000: _MapPrfab/TestOverhead/MonoBehaviour-SuperTiled2Unity.SuperMap
+    11400038: _superAsset
+    100100000: _MapPrfab
+    2569400265252428796: _MapPrfab/TestOverhead/Grid/Grid
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 1fa25d03934ea624a82bf2fcee6f0873, type: 3}
+  missingFiles: []
+  errors:
+  - 'Missing tileset asset: ../../../../../../../../leishen/Unity/2018/TileMapGame/Assets/TileMap/TileSets/iso_64_64_building.tsx'
+  warnings: []
+  missingSortingLayers: []
+  missingLayers: []
+  missingTags: []
+  importerVersion: 21
+  pixelsPerUnit: 1
+  edgesPerEllipse: 32
+  numberOfObjectsImported: 2
+  tilesAsObjects: 0
+  sortingMode: 1
+  isIsometric: 0
+  customImporterClassName: 
+  internalTilesets: []

@@ -1,0 +1,49 @@
+fileFormatVersion: 2
+guid: e63c1ad1d8c3e45c095eb0bceaad04f9
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: _MapPrfab/my
+    100002: _MapPrfab/my/Grid
+    100006: _MapPrfab/my/Grid/bg
+    100008: _MapPrfab/my/Grid/death
+    400000: _MapPrfab/my/Transform
+    400002: _MapPrfab/my/Grid/Transform
+    400006: _MapPrfab/my/Grid/bg/Transform
+    400008: _MapPrfab/my/Grid/death/Transform
+    11400000: _MapPrfab/my/MonoBehaviour-SuperTiled2Unity.SuperMap
+    11400002: _MapPrfab/my/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400008: _superAsset
+    11400010: _MapPrfab/my/Grid/bg/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400012: _MapPrfab/my/Grid/bg/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400014: _MapPrfab/my/Grid/death/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400016: _MapPrfab/my/Grid/death/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    100100000: _MapPrfab
+    2569400265252428796: _MapPrfab/my/Grid/Grid
+    3664157343022684178: _MapPrfab/my/Grid/bg/TilemapRenderer
+    3664157343022684180: _MapPrfab/my/Grid/death/TilemapRenderer
+    8195094279510102544: _MapPrfab/my/Grid/bg/Tilemap
+    8195094279510102546: _MapPrfab/my/Grid/death/Tilemap
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 1fa25d03934ea624a82bf2fcee6f0873, type: 3}
+  missingFiles: []
+  errors: []
+  warnings:
+  - Pixels Per Unit mismatch between map (100) and tileset 'Zoria Tileset/scraps.tsx'
+    (1)
+  - Pixels Per Unit mismatch between map (100) and tileset 'Zoria Tileset/water.tsx'
+    (1)
+  missingSortingLayers: []
+  missingLayers: []
+  missingTags: []
+  importerVersion: 21
+  pixelsPerUnit: 16
+  edgesPerEllipse: 32
+  numberOfObjectsImported: 2
+  tilesAsObjects: 0
+  sortingMode: 0
+  isIsometric: 0
+  customImporterClassName: 
+  internalTilesets: []

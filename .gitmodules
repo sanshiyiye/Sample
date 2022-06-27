@@ -1,0 +1,3 @@
+[submodule "Packages/FrameWork"]
+	path = Packages/FrameWork
+	url = http://git.moonjoy.com/moonjoy/rjoyframework.git

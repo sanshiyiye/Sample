@@ -1,0 +1,45 @@
+fileFormatVersion: 2
+guid: 1dea7fa9cf3b144768554a41f5afc927
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: _MapPrfab/bigmap
+    100002: _MapPrfab/bigmap/Grid
+    100004: _MapPrfab/bigmap/Grid/island
+    100006: _MapPrfab/bigmap/Grid/sea
+    400000: _MapPrfab/bigmap/Transform
+    400002: _MapPrfab/bigmap/Grid/Transform
+    400004: _MapPrfab/bigmap/Grid/island/Transform
+    400006: _MapPrfab/bigmap/Grid/sea/Transform
+    11400000: _MapPrfab/bigmap/MonoBehaviour-SuperTiled2Unity.SuperMap
+    11400002: _MapPrfab/bigmap/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400004: _MapPrfab/bigmap/Grid/island/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400006: _MapPrfab/bigmap/Grid/island/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400008: _MapPrfab/bigmap/Grid/sea/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400010: _MapPrfab/bigmap/Grid/sea/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400012: _superAsset
+    100100000: _MapPrfab
+    2569400265252428796: _MapPrfab/bigmap/Grid/Grid
+    3664157343022684176: _MapPrfab/bigmap/Grid/island/TilemapRenderer
+    3664157343022684178: _MapPrfab/bigmap/Grid/sea/TilemapRenderer
+    8195094279510102542: _MapPrfab/bigmap/Grid/island/Tilemap
+    8195094279510102544: _MapPrfab/bigmap/Grid/sea/Tilemap
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 1fa25d03934ea624a82bf2fcee6f0873, type: 3}
+  missingFiles: []
+  errors: []
+  warnings: []
+  missingSortingLayers: []
+  missingLayers: []
+  missingTags: []
+  importerVersion: 21
+  pixelsPerUnit: 1
+  edgesPerEllipse: 32
+  numberOfObjectsImported: 2
+  tilesAsObjects: 0
+  sortingMode: 0
+  isIsometric: 0
+  customImporterClassName: 
+  internalTilesets: []

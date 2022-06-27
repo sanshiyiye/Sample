@@ -1,0 +1,1006 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Core</name>
+    </assembly>
+    <members>
+        <member name="T:Core.AppConfig">
+            <summary>
+            系统配置
+            </summary>
+        </member>
+        <member name="F:Core.AppConfig.LOG_DEVIVE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Core.AppConfig.IsEditorLoadAsset">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Core.AppConfig.IsDebugBuild">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Core.Event.CallBack">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Core.Event.CallBack`1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:Core.Event.CallBack`2">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <typeparam name="T1"></typeparam>
+        </member>
+        <member name="T:Core.Event.CallBack`3">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <typeparam name="T1"></typeparam>
+            <typeparam name="T2"></typeparam>
+        </member>
+        <member name="T:Core.Event.CallBack`4">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <typeparam name="T1"></typeparam>
+            <typeparam name="T2"></typeparam>
+            <typeparam name="T3"></typeparam>
+        </member>
+        <member name="T:Core.Event.CallBackR`1">
+            <summary>
+            
+            </summary>
+            <typeparam name="R"></typeparam>
+        </member>
+        <member name="T:Core.Event.CallBackR`2">
+            <summary>
+            
+            </summary>
+            <typeparam name="R"></typeparam>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:Core.Event.CallBackR`3">
+            <summary>
+            
+            </summary>
+            <typeparam name="R"></typeparam>
+            <typeparam name="T"></typeparam>
+            <typeparam name="T1"></typeparam>
+        </member>
+        <member name="T:Core.Event.CallBackR`4">
+            <summary>
+            
+            </summary>
+            <typeparam name="R"></typeparam>
+            <typeparam name="T"></typeparam>
+            <typeparam name="T1"></typeparam>
+            <typeparam name="T2"></typeparam>
+        </member>
+        <member name="T:Core.Event.CallBackR`5">
+            <summary>
+            
+            </summary>
+            <typeparam name="R"></typeparam>
+            <typeparam name="T"></typeparam>
+            <typeparam name="T1"></typeparam>
+            <typeparam name="T2"></typeparam>
+            <typeparam name="T3"></typeparam>
+        </member>
+        <member name="T:Core.GameException">
+            <summary>
+            游戏框架异常类。
+            </summary>
+        </member>
+        <member name="M:Core.GameException.#ctor">
+            <summary>
+            初始化游戏框架异常类的新实例。
+            </summary>
+        </member>
+        <member name="M:Core.GameException.#ctor(System.String)">
+            <summary>
+            使用指定错误消息初始化游戏框架异常类的新实例。
+            </summary>
+            <param name="message">描述错误的消息。</param>
+        </member>
+        <member name="M:Core.GameException.#ctor(System.String,System.Exception)">
+            <summary>
+            使用指定错误消息和对作为此异常原因的内部异常的引用来初始化游戏框架异常类的新实例。
+            </summary>
+            <param name="message">解释异常原因的错误消息。</param>
+            <param name="innerException">导致当前异常的异常。如果 innerException 参数不为空引用，则在处理内部异常的 catch 块中引发当前异常。</param>
+        </member>
+        <member name="M:Core.GameException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            用序列化数据初始化游戏框架异常类的新实例。
+            </summary>
+            <param name="info">存有有关所引发异常的序列化的对象数据。</param>
+            <param name="context">包含有关源或目标的上下文信息。</param>
+        </member>
+        <member name="T:Core.IAppEntry">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Core.IAppEntry.OnInit">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Core.IAppEntry.OnStart">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Core.IAppEntry.CheckUpdate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Core.Log.Debuger">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Core.Log.Debuger.Check(System.Object,System.String,System.Object[])">
+            <summary>
+            Check if a object null，条件不满足打印Error，不会中断当前调用
+            </summary>
+        </member>
+        <member name="M:Core.Log.Debuger.Check(System.Boolean,System.String,System.Object[])">
+            <summary>
+            条件不满足打印Error，不会中断当前调用
+            </summary>
+        </member>
+        <member name="M:Core.Log.Debuger.Assert(System.Boolean)">
+            <summary>
+            条件不满足会中断当前调用
+            </summary>
+        </member>
+        <member name="M:Core.Log.Debuger.Assert(System.Boolean,System.String,System.Object[])">
+            <summary>
+            
+            </summary>
+            <param name="result"></param>
+            <param name="msg"></param>
+            <param name="args"></param>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:Core.Log.Debuger.Assert(System.Int32)">
+            <summary>
+            当前值是否!=0
+            </summary>
+        </member>
+        <member name="M:Core.Log.Debuger.Assert(System.Int64)">
+            <summary>
+            
+            </summary>
+            <param name="result"></param>
+        </member>
+        <member name="M:Core.Log.Debuger.Assert(System.Object)">
+            <summary>
+            检查参数是否为null，条件不满足会中断当前调用
+            </summary>
+        </member>
+        <member name="T:Core.Log.LogHandlerType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Core.Log.LogHandlerType.SYS">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Core.Log.ILogHandler">
+            <summary>
+            日志回调接口
+            </summary>
+        </member>
+        <member name="M:Core.Log.ILogHandler.Log(System.String,System.Object[])">
+            <summary>
+            
+            </summary>
+            <param name="format"></param>
+            <param name="messages"></param>
+        </member>
+        <member name="M:Core.Log.ILogHandler.Warn(System.String,System.Object[])">
+            <summary>
+            
+            </summary>
+            <param name="format"></param>
+            <param name="messages"></param>
+        </member>
+        <member name="M:Core.Log.ILogHandler.Error(System.String,System.Object[])">
+            <summary>
+            
+            </summary>
+            <param name="format"></param>
+            <param name="messages"></param>
+        </member>
+        <member name="M:Core.Log.ILogHandler.LogLogException(System.String,System.Exception)">
+            <summary>
+            
+            </summary>
+            <param name="format"></param>
+            <param name="exception"></param>
+        </member>
+        <member name="M:Core.Log.ILogHandler.LogTrace(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="format"></param>
+            <param name="trace"></param>
+        </member>
+        <member name="T:Core.Log.LogType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Core.Log.LogType.CORE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Core.Log.LogType.SYS">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Core.Log.LogType.FRAME">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Core.Log.LogType.UI">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Core.Log.LogType.SCENE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Core.Log.LogType.CHANNEL1">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Core.Log.LogType.CHANNEL2">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Core.Log.LogType.CHANNEL3">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Core.Log.Logger">
+            <summary>
+            日志工具
+            </summary>
+        </member>
+        <member name="F:Core.Log.Logger.mEnableLog">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Core.Log.Logger.mLogHandler">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Core.Log.Logger.AddLogHandler(Core.Log.LogType,Core.Log.ILogHandler)">
+            <summary>
+            
+            </summary>
+            <param name="inType"></param>
+            <param name="inLogHandler"></param>
+        </member>
+        <member name="M:Core.Log.Logger.Info(System.Byte,System.String,System.Object[])">
+            <summary>
+            
+            </summary>
+            <param name="lv"></param>
+            <param name="content"></param>
+            <param name="param"></param>
+        </member>
+        <member name="M:Core.Log.Logger.Error(System.Byte,System.String,System.Object[])">
+            <summary>
+            
+            </summary>
+            <param name="lv"></param>
+            <param name="content"></param>
+            <param name="param"></param>
+        </member>
+        <member name="M:Core.Log.Logger.Trace(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="content"></param>
+        </member>
+        <member name="F:Core.Log.Logger.mOpenSwitch">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Core.Log.Logger.init(System.Boolean,System.Byte,System.Collections.Generic.Dictionary{Core.Log.LogType,Core.Log.ILogHandler})">
+            <summary>
+            
+            </summary>
+            <param name="enable"></param>
+            <param name="initvalue"></param>
+            <param name="logHandlers"></param>
+        </member>
+        <member name="M:Core.Log.Logger.open(System.Byte)">
+            <summary>
+            
+            </summary>
+            <param name="invalue"></param>
+        </member>
+        <member name="T:Core.Log.LogLevel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Core.Log.LogLevel.SYS">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Core.Log.LogLevel.DEVICE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Core.Log.LogLevel.FRAME">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Core.Log.LogLevel.EDITOR">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Core.Log.LogLevel.GAME">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Core.AppEngine">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Core.AppEngine.Build(System.Object,Core.IAppEntry,System.Collections.Generic.List{Core.IModule})">
+            <summary>
+             
+            </summary>
+            <param name="inRoot"></param>
+            <param name="inEtry"></param>
+            <param name="inModules"></param>
+        </member>
+        <member name="M:Core.AppEngine.Init">
+            <summary>
+            引擎逻辑初始化
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Core.ConfigMgr">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Core.ConfigMgr.Init">
+            <summary>
+            初始化接口
+            </summary>
+        </member>
+        <member name="M:Core.ConfigMgr.Reload">
+            <summary>
+            重新加载
+            </summary>
+        </member>
+        <member name="M:Core.ConfigMgr.Clear">
+            <summary>
+            清楚配置
+            </summary>
+        </member>
+        <member name="M:Core.ConfigMgr.getConfigByName(System.String)">
+            <summary>
+            按照名称获取配置文件
+            </summary>
+            <param name="name">配置名称</param>
+            <returns></returns>
+        </member>
+        <member name="T:Core.IConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Core.Game">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Core.Game.init(Core.Utils.BaseApplication)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Core.Game.appliction">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Core.IModule">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Core.IModule.Init">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Core.Singleton`1">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Core.Singleton`1.getInstance">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Core.Utils.BaseApplication">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:Core.Utils.BaseApplication.mDataPath">
+            <summary>
+            数据存放路径
+            </summary>
+        </member>
+        <member name="P:Core.Utils.BaseApplication.DataPath">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Core.Utils.BaseApplication.mPlatform">
+            <summary>
+            平台类型(int)
+            </summary>
+        </member>
+        <member name="P:Core.Utils.BaseApplication.Platform">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Core.Utils.BaseApplication.mStreamingAssetsPath">
+            <summary>
+            包资源路径
+            </summary>
+        </member>
+        <member name="P:Core.Utils.BaseApplication.StreamingAssetsPath">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Core.Utils.BaseApplication.mPersistentDataPath">
+            <summary>
+            持久化路径
+            </summary>
+        </member>
+        <member name="P:Core.Utils.BaseApplication.PersistentDataPath">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Core.Utils.BaseApplication.mTemporaryCachePath">
+            <summary>
+            临时cache版本
+            </summary>
+        </member>
+        <member name="P:Core.Utils.BaseApplication.TemporaryCachePath">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Core.Utils.BaseApplication.mUnityVersion">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Core.Utils.BaseApplication.UnityVersion">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Core.Utils.BaseApplication.mDeviceModel">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Core.Utils.BaseApplication.DeviceModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Core.Utils.BaseApplication.mDeviceUniqueIdentifier">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Core.Utils.BaseApplication.DeviceUniqueIdentifier">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Core.Utils.BaseApplication.mGraphicsDeviceVersion">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Core.Utils.BaseApplication.GraphicsDeviceVersion">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Core.Utils.ITextHelper">
+            <summary>
+            字符辅助器接口。
+            </summary>
+        </member>
+        <member name="M:Core.Utils.ITextHelper.Format``1(System.String,``0)">
+            <summary>
+            获取格式化字符串。
+            </summary>
+            <typeparam name="T">字符串参数的类型。</typeparam>
+            <param name="format">字符串格式。</param>
+            <param name="arg">字符串参数。</param>
+            <returns>格式化后的字符串。</returns>
+        </member>
+        <member name="M:Core.Utils.ITextHelper.Format``2(System.String,``0,``1)">
+            <summary>
+            获取格式化字符串。
+            </summary>
+            <typeparam name="T1">字符串参数 1 的类型。</typeparam>
+            <typeparam name="T2">字符串参数 2 的类型。</typeparam>
+            <param name="format">字符串格式。</param>
+            <param name="arg1">字符串参数 1。</param>
+            <param name="arg2">字符串参数 2。</param>
+            <returns>格式化后的字符串。</returns>
+        </member>
+        <member name="M:Core.Utils.ITextHelper.Format``3(System.String,``0,``1,``2)">
+            <summary>
+            获取格式化字符串。
+            </summary>
+            <typeparam name="T1">字符串参数 1 的类型。</typeparam>
+            <typeparam name="T2">字符串参数 2 的类型。</typeparam>
+            <typeparam name="T3">字符串参数 3 的类型。</typeparam>
+            <param name="format">字符串格式。</param>
+            <param name="arg1">字符串参数 1。</param>
+            <param name="arg2">字符串参数 2。</param>
+            <param name="arg3">字符串参数 3。</param>
+            <returns>格式化后的字符串。</returns>
+        </member>
+        <member name="M:Core.Utils.ITextHelper.Format``4(System.String,``0,``1,``2,``3)">
+            <summary>
+            获取格式化字符串。
+            </summary>
+            <typeparam name="T1">字符串参数 1 的类型。</typeparam>
+            <typeparam name="T2">字符串参数 2 的类型。</typeparam>
+            <typeparam name="T3">字符串参数 3 的类型。</typeparam>
+            <typeparam name="T4">字符串参数 4 的类型。</typeparam>
+            <param name="format">字符串格式。</param>
+            <param name="arg1">字符串参数 1。</param>
+            <param name="arg2">字符串参数 2。</param>
+            <param name="arg3">字符串参数 3。</param>
+            <param name="arg4">字符串参数 4。</param>
+            <returns>格式化后的字符串。</returns>
+        </member>
+        <member name="M:Core.Utils.ITextHelper.Format``5(System.String,``0,``1,``2,``3,``4)">
+            <summary>
+            获取格式化字符串。
+            </summary>
+            <typeparam name="T1">字符串参数 1 的类型。</typeparam>
+            <typeparam name="T2">字符串参数 2 的类型。</typeparam>
+            <typeparam name="T3">字符串参数 3 的类型。</typeparam>
+            <typeparam name="T4">字符串参数 4 的类型。</typeparam>
+            <typeparam name="T5">字符串参数 5 的类型。</typeparam>
+            <param name="format">字符串格式。</param>
+            <param name="arg1">字符串参数 1。</param>
+            <param name="arg2">字符串参数 2。</param>
+            <param name="arg3">字符串参数 3。</param>
+            <param name="arg4">字符串参数 4。</param>
+            <param name="arg5">字符串参数 5。</param>
+            <returns>格式化后的字符串。</returns>
+        </member>
+        <member name="M:Core.Utils.ITextHelper.Format``6(System.String,``0,``1,``2,``3,``4,``5)">
+            <summary>
+            获取格式化字符串。
+            </summary>
+            <typeparam name="T1">字符串参数 1 的类型。</typeparam>
+            <typeparam name="T2">字符串参数 2 的类型。</typeparam>
+            <typeparam name="T3">字符串参数 3 的类型。</typeparam>
+            <typeparam name="T4">字符串参数 4 的类型。</typeparam>
+            <typeparam name="T5">字符串参数 5 的类型。</typeparam>
+            <typeparam name="T6">字符串参数 6 的类型。</typeparam>
+            <param name="format">字符串格式。</param>
+            <param name="arg1">字符串参数 1。</param>
+            <param name="arg2">字符串参数 2。</param>
+            <param name="arg3">字符串参数 3。</param>
+            <param name="arg4">字符串参数 4。</param>
+            <param name="arg5">字符串参数 5。</param>
+            <param name="arg6">字符串参数 6。</param>
+            <returns>格式化后的字符串。</returns>
+        </member>
+        <member name="M:Core.Utils.ITextHelper.Format``7(System.String,``0,``1,``2,``3,``4,``5,``6)">
+            <summary>
+            获取格式化字符串。
+            </summary>
+            <typeparam name="T1">字符串参数 1 的类型。</typeparam>
+            <typeparam name="T2">字符串参数 2 的类型。</typeparam>
+            <typeparam name="T3">字符串参数 3 的类型。</typeparam>
+            <typeparam name="T4">字符串参数 4 的类型。</typeparam>
+            <typeparam name="T5">字符串参数 5 的类型。</typeparam>
+            <typeparam name="T6">字符串参数 6 的类型。</typeparam>
+            <typeparam name="T7">字符串参数 7 的类型。</typeparam>
+            <param name="format">字符串格式。</param>
+            <param name="arg1">字符串参数 1。</param>
+            <param name="arg2">字符串参数 2。</param>
+            <param name="arg3">字符串参数 3。</param>
+            <param name="arg4">字符串参数 4。</param>
+            <param name="arg5">字符串参数 5。</param>
+            <param name="arg6">字符串参数 6。</param>
+            <param name="arg7">字符串参数 7。</param>
+            <returns>格式化后的字符串。</returns>
+        </member>
+        <member name="M:Core.Utils.ITextHelper.Format``8(System.String,``0,``1,``2,``3,``4,``5,``6,``7)">
+            <summary>
+            获取格式化字符串。
+            </summary>
+            <typeparam name="T1">字符串参数 1 的类型。</typeparam>
+            <typeparam name="T2">字符串参数 2 的类型。</typeparam>
+            <typeparam name="T3">字符串参数 3 的类型。</typeparam>
+            <typeparam name="T4">字符串参数 4 的类型。</typeparam>
+            <typeparam name="T5">字符串参数 5 的类型。</typeparam>
+            <typeparam name="T6">字符串参数 6 的类型。</typeparam>
+            <typeparam name="T7">字符串参数 7 的类型。</typeparam>
+            <typeparam name="T8">字符串参数 8 的类型。</typeparam>
+            <param name="format">字符串格式。</param>
+            <param name="arg1">字符串参数 1。</param>
+            <param name="arg2">字符串参数 2。</param>
+            <param name="arg3">字符串参数 3。</param>
+            <param name="arg4">字符串参数 4。</param>
+            <param name="arg5">字符串参数 5。</param>
+            <param name="arg6">字符串参数 6。</param>
+            <param name="arg7">字符串参数 7。</param>
+            <param name="arg8">字符串参数 8。</param>
+            <returns>格式化后的字符串。</returns>
+        </member>
+        <member name="M:Core.Utils.ITextHelper.Format``9(System.String,``0,``1,``2,``3,``4,``5,``6,``7,``8)">
+            <summary>
+            获取格式化字符串。
+            </summary>
+            <typeparam name="T1">字符串参数 1 的类型。</typeparam>
+            <typeparam name="T2">字符串参数 2 的类型。</typeparam>
+            <typeparam name="T3">字符串参数 3 的类型。</typeparam>
+            <typeparam name="T4">字符串参数 4 的类型。</typeparam>
+            <typeparam name="T5">字符串参数 5 的类型。</typeparam>
+            <typeparam name="T6">字符串参数 6 的类型。</typeparam>
+            <typeparam name="T7">字符串参数 7 的类型。</typeparam>
+            <typeparam name="T8">字符串参数 8 的类型。</typeparam>
+            <typeparam name="T9">字符串参数 9 的类型。</typeparam>
+            <param name="format">字符串格式。</param>
+            <param name="arg1">字符串参数 1。</param>
+            <param name="arg2">字符串参数 2。</param>
+            <param name="arg3">字符串参数 3。</param>
+            <param name="arg4">字符串参数 4。</param>
+            <param name="arg5">字符串参数 5。</param>
+            <param name="arg6">字符串参数 6。</param>
+            <param name="arg7">字符串参数 7。</param>
+            <param name="arg8">字符串参数 8。</param>
+            <param name="arg9">字符串参数 9。</param>
+            <returns>格式化后的字符串。</returns>
+        </member>
+        <member name="M:Core.Utils.ITextHelper.Format``10(System.String,``0,``1,``2,``3,``4,``5,``6,``7,``8,``9)">
+            <summary>
+            获取格式化字符串。
+            </summary>
+            <typeparam name="T1">字符串参数 1 的类型。</typeparam>
+            <typeparam name="T2">字符串参数 2 的类型。</typeparam>
+            <typeparam name="T3">字符串参数 3 的类型。</typeparam>
+            <typeparam name="T4">字符串参数 4 的类型。</typeparam>
+            <typeparam name="T5">字符串参数 5 的类型。</typeparam>
+            <typeparam name="T6">字符串参数 6 的类型。</typeparam>
+            <typeparam name="T7">字符串参数 7 的类型。</typeparam>
+            <typeparam name="T8">字符串参数 8 的类型。</typeparam>
+            <typeparam name="T9">字符串参数 9 的类型。</typeparam>
+            <typeparam name="T10">字符串参数 10 的类型。</typeparam>
+            <param name="format">字符串格式。</param>
+            <param name="arg1">字符串参数 1。</param>
+            <param name="arg2">字符串参数 2。</param>
+            <param name="arg3">字符串参数 3。</param>
+            <param name="arg4">字符串参数 4。</param>
+            <param name="arg5">字符串参数 5。</param>
+            <param name="arg6">字符串参数 6。</param>
+            <param name="arg7">字符串参数 7。</param>
+            <param name="arg8">字符串参数 8。</param>
+            <param name="arg9">字符串参数 9。</param>
+            <param name="arg10">字符串参数 10。</param>
+            <returns>格式化后的字符串。</returns>
+        </member>
+        <member name="M:Core.Utils.ITextHelper.Format``11(System.String,``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10)">
+            <summary>
+            获取格式化字符串。
+            </summary>
+            <typeparam name="T1">字符串参数 1 的类型。</typeparam>
+            <typeparam name="T2">字符串参数 2 的类型。</typeparam>
+            <typeparam name="T3">字符串参数 3 的类型。</typeparam>
+            <typeparam name="T4">字符串参数 4 的类型。</typeparam>
+            <typeparam name="T5">字符串参数 5 的类型。</typeparam>
+            <typeparam name="T6">字符串参数 6 的类型。</typeparam>
+            <typeparam name="T7">字符串参数 7 的类型。</typeparam>
+            <typeparam name="T8">字符串参数 8 的类型。</typeparam>
+            <typeparam name="T9">字符串参数 9 的类型。</typeparam>
+            <typeparam name="T10">字符串参数 10 的类型。</typeparam>
+            <typeparam name="T11">字符串参数 11 的类型。</typeparam>
+            <param name="format">字符串格式。</param>
+            <param name="arg1">字符串参数 1。</param>
+            <param name="arg2">字符串参数 2。</param>
+            <param name="arg3">字符串参数 3。</param>
+            <param name="arg4">字符串参数 4。</param>
+            <param name="arg5">字符串参数 5。</param>
+            <param name="arg6">字符串参数 6。</param>
+            <param name="arg7">字符串参数 7。</param>
+            <param name="arg8">字符串参数 8。</param>
+            <param name="arg9">字符串参数 9。</param>
+            <param name="arg10">字符串参数 10。</param>
+            <param name="arg11">字符串参数 11。</param>
+            <returns>格式化后的字符串。</returns>
+        </member>
+        <member name="M:Core.Utils.ITextHelper.Format``12(System.String,``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11)">
+            <summary>
+            获取格式化字符串。
+            </summary>
+            <typeparam name="T1">字符串参数 1 的类型。</typeparam>
+            <typeparam name="T2">字符串参数 2 的类型。</typeparam>
+            <typeparam name="T3">字符串参数 3 的类型。</typeparam>
+            <typeparam name="T4">字符串参数 4 的类型。</typeparam>
+            <typeparam name="T5">字符串参数 5 的类型。</typeparam>
+            <typeparam name="T6">字符串参数 6 的类型。</typeparam>
+            <typeparam name="T7">字符串参数 7 的类型。</typeparam>
+            <typeparam name="T8">字符串参数 8 的类型。</typeparam>
+            <typeparam name="T9">字符串参数 9 的类型。</typeparam>
+            <typeparam name="T10">字符串参数 10 的类型。</typeparam>
+            <typeparam name="T11">字符串参数 11 的类型。</typeparam>
+            <typeparam name="T12">字符串参数 12 的类型。</typeparam>
+            <param name="format">字符串格式。</param>
+            <param name="arg1">字符串参数 1。</param>
+            <param name="arg2">字符串参数 2。</param>
+            <param name="arg3">字符串参数 3。</param>
+            <param name="arg4">字符串参数 4。</param>
+            <param name="arg5">字符串参数 5。</param>
+            <param name="arg6">字符串参数 6。</param>
+            <param name="arg7">字符串参数 7。</param>
+            <param name="arg8">字符串参数 8。</param>
+            <param name="arg9">字符串参数 9。</param>
+            <param name="arg10">字符串参数 10。</param>
+            <param name="arg11">字符串参数 11。</param>
+            <param name="arg12">字符串参数 12。</param>
+            <returns>格式化后的字符串。</returns>
+        </member>
+        <member name="M:Core.Utils.ITextHelper.Format``13(System.String,``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12)">
+            <summary>
+            获取格式化字符串。
+            </summary>
+            <typeparam name="T1">字符串参数 1 的类型。</typeparam>
+            <typeparam name="T2">字符串参数 2 的类型。</typeparam>
+            <typeparam name="T3">字符串参数 3 的类型。</typeparam>
+            <typeparam name="T4">字符串参数 4 的类型。</typeparam>
+            <typeparam name="T5">字符串参数 5 的类型。</typeparam>
+            <typeparam name="T6">字符串参数 6 的类型。</typeparam>
+            <typeparam name="T7">字符串参数 7 的类型。</typeparam>
+            <typeparam name="T8">字符串参数 8 的类型。</typeparam>
+            <typeparam name="T9">字符串参数 9 的类型。</typeparam>
+            <typeparam name="T10">字符串参数 10 的类型。</typeparam>
+            <typeparam name="T11">字符串参数 11 的类型。</typeparam>
+            <typeparam name="T12">字符串参数 12 的类型。</typeparam>
+            <typeparam name="T13">字符串参数 13 的类型。</typeparam>
+            <param name="format">字符串格式。</param>
+            <param name="arg1">字符串参数 1。</param>
+            <param name="arg2">字符串参数 2。</param>
+            <param name="arg3">字符串参数 3。</param>
+            <param name="arg4">字符串参数 4。</param>
+            <param name="arg5">字符串参数 5。</param>
+            <param name="arg6">字符串参数 6。</param>
+            <param name="arg7">字符串参数 7。</param>
+            <param name="arg8">字符串参数 8。</param>
+            <param name="arg9">字符串参数 9。</param>
+            <param name="arg10">字符串参数 10。</param>
+            <param name="arg11">字符串参数 11。</param>
+            <param name="arg12">字符串参数 12。</param>
+            <param name="arg13">字符串参数 13。</param>
+            <returns>格式化后的字符串。</returns>
+        </member>
+        <member name="M:Core.Utils.ITextHelper.Format``14(System.String,``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13)">
+            <summary>
+            获取格式化字符串。
+            </summary>
+            <typeparam name="T1">字符串参数 1 的类型。</typeparam>
+            <typeparam name="T2">字符串参数 2 的类型。</typeparam>
+            <typeparam name="T3">字符串参数 3 的类型。</typeparam>
+            <typeparam name="T4">字符串参数 4 的类型。</typeparam>
+            <typeparam name="T5">字符串参数 5 的类型。</typeparam>
+            <typeparam name="T6">字符串参数 6 的类型。</typeparam>
+            <typeparam name="T7">字符串参数 7 的类型。</typeparam>
+            <typeparam name="T8">字符串参数 8 的类型。</typeparam>
+            <typeparam name="T9">字符串参数 9 的类型。</typeparam>
+            <typeparam name="T10">字符串参数 10 的类型。</typeparam>
+            <typeparam name="T11">字符串参数 11 的类型。</typeparam>
+            <typeparam name="T12">字符串参数 12 的类型。</typeparam>
+            <typeparam name="T13">字符串参数 13 的类型。</typeparam>
+            <typeparam name="T14">字符串参数 14 的类型。</typeparam>
+            <param name="format">字符串格式。</param>
+            <param name="arg1">字符串参数 1。</param>
+            <param name="arg2">字符串参数 2。</param>
+            <param name="arg3">字符串参数 3。</param>
+            <param name="arg4">字符串参数 4。</param>
+            <param name="arg5">字符串参数 5。</param>
+            <param name="arg6">字符串参数 6。</param>
+            <param name="arg7">字符串参数 7。</param>
+            <param name="arg8">字符串参数 8。</param>
+            <param name="arg9">字符串参数 9。</param>
+            <param name="arg10">字符串参数 10。</param>
+            <param name="arg11">字符串参数 11。</param>
+            <param name="arg12">字符串参数 12。</param>
+            <param name="arg13">字符串参数 13。</param>
+            <param name="arg14">字符串参数 14。</param>
+            <returns>格式化后的字符串。</returns>
+        </member>
+        <member name="M:Core.Utils.ITextHelper.Format``15(System.String,``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13,``14)">
+            <summary>
+            获取格式化字符串。
+            </summary>
+            <typeparam name="T1">字符串参数 1 的类型。</typeparam>
+            <typeparam name="T2">字符串参数 2 的类型。</typeparam>
+            <typeparam name="T3">字符串参数 3 的类型。</typeparam>
+            <typeparam name="T4">字符串参数 4 的类型。</typeparam>
+            <typeparam name="T5">字符串参数 5 的类型。</typeparam>
+            <typeparam name="T6">字符串参数 6 的类型。</typeparam>
+            <typeparam name="T7">字符串参数 7 的类型。</typeparam>
+            <typeparam name="T8">字符串参数 8 的类型。</typeparam>
+            <typeparam name="T9">字符串参数 9 的类型。</typeparam>
+            <typeparam name="T10">字符串参数 10 的类型。</typeparam>
+            <typeparam name="T11">字符串参数 11 的类型。</typeparam>
+            <typeparam name="T12">字符串参数 12 的类型。</typeparam>
+            <typeparam name="T13">字符串参数 13 的类型。</typeparam>
+            <typeparam name="T14">字符串参数 14 的类型。</typeparam>
+            <typeparam name="T15">字符串参数 15 的类型。</typeparam>
+            <param name="format">字符串格式。</param>
+            <param name="arg1">字符串参数 1。</param>
+            <param name="arg2">字符串参数 2。</param>
+            <param name="arg3">字符串参数 3。</param>
+            <param name="arg4">字符串参数 4。</param>
+            <param name="arg5">字符串参数 5。</param>
+            <param name="arg6">字符串参数 6。</param>
+            <param name="arg7">字符串参数 7。</param>
+            <param name="arg8">字符串参数 8。</param>
+            <param name="arg9">字符串参数 9。</param>
+            <param name="arg10">字符串参数 10。</param>
+            <param name="arg11">字符串参数 11。</param>
+            <param name="arg12">字符串参数 12。</param>
+            <param name="arg13">字符串参数 13。</param>
+            <param name="arg14">字符串参数 14。</param>
+            <param name="arg15">字符串参数 15。</param>
+            <returns>格式化后的字符串。</returns>
+        </member>
+        <member name="M:Core.Utils.ITextHelper.Format``16(System.String,``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13,``14,``15)">
+            <summary>
+            获取格式化字符串。
+            </summary>
+            <typeparam name="T1">字符串参数 1 的类型。</typeparam>
+            <typeparam name="T2">字符串参数 2 的类型。</typeparam>
+            <typeparam name="T3">字符串参数 3 的类型。</typeparam>
+            <typeparam name="T4">字符串参数 4 的类型。</typeparam>
+            <typeparam name="T5">字符串参数 5 的类型。</typeparam>
+            <typeparam name="T6">字符串参数 6 的类型。</typeparam>
+            <typeparam name="T7">字符串参数 7 的类型。</typeparam>
+            <typeparam name="T8">字符串参数 8 的类型。</typeparam>
+            <typeparam name="T9">字符串参数 9 的类型。</typeparam>
+            <typeparam name="T10">字符串参数 10 的类型。</typeparam>
+            <typeparam name="T11">字符串参数 11 的类型。</typeparam>
+            <typeparam name="T12">字符串参数 12 的类型。</typeparam>
+            <typeparam name="T13">字符串参数 13 的类型。</typeparam>
+            <typeparam name="T14">字符串参数 14 的类型。</typeparam>
+            <typeparam name="T15">字符串参数 15 的类型。</typeparam>
+            <typeparam name="T16">字符串参数 16 的类型。</typeparam>
+            <param name="format">字符串格式。</param>
+            <param name="arg1">字符串参数 1。</param>
+            <param name="arg2">字符串参数 2。</param>
+            <param name="arg3">字符串参数 3。</param>
+            <param name="arg4">字符串参数 4。</param>
+            <param name="arg5">字符串参数 5。</param>
+            <param name="arg6">字符串参数 6。</param>
+            <param name="arg7">字符串参数 7。</param>
+            <param name="arg8">字符串参数 8。</param>
+            <param name="arg9">字符串参数 9。</param>
+            <param name="arg10">字符串参数 10。</param>
+            <param name="arg11">字符串参数 11。</param>
+            <param name="arg12">字符串参数 12。</param>
+            <param name="arg13">字符串参数 13。</param>
+            <param name="arg14">字符串参数 14。</param>
+            <param name="arg15">字符串参数 15。</param>
+            <param name="arg16">字符串参数 16。</param>
+            <returns>格式化后的字符串。</returns>
+        </member>
+        <member name="T:Core.Utils.TextUtility">
+            <summary>
+            字符相关的实用函数。
+            </summary>
+        </member>
+        <member name="M:Core.Utils.TextUtility.SetTextHelper(Core.Utils.ITextHelper)">
+            <summary>
+            设置字符辅助器。
+            </summary>
+            <param name="textHelper">要设置的字符辅助器。</param>
+        </member>
+        <member name="M:Core.Utils.TextUtility.Format``1(System.String,``0[])">
+            <summary>
+            获取格式化字符串。
+            </summary>
+            <typeparam name="T">字符串参数的类型。</typeparam>
+            <param name="format">字符串格式。</param>
+            <param name="arg">字符串参数。</param>
+            <returns>格式化后的字符串。</returns>
+        </member>
+        <member name="M:Core.Utils.TextUtility.GetExceptionTrack(System.Exception)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Core.Utils.TextUtility.TrackFormatting(System.Diagnostics.StackTrace)">
+            <summary>
+            
+            </summary>
+            <param name="instackTrace"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Core.Utils.Tools">
+            <summary>
+            工具类
+            </summary>
+        </member>
+        <member name="M:Core.Utils.Tools.HasWriteAccessToFolder(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="inPath"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

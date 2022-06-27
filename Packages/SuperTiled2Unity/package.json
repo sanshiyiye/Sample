@@ -1,0 +1,14 @@
+{
+  "name": "com.rjoy.supertiled2unity",
+  "displayName": "RJSupertiled2unity",
+  "version": "1.0.0",
+  "description": "rjoy tilemap",
+  "keywords": [
+    "tilemap",
+    "c#"  ],
+  "category": "Unity",
+  "repository": {
+    "type": "git",
+    "url": "https://git.moonjoy.com/rjoysupertiled2unity"
+  }
+}
