@@ -567,6 +567,183 @@
             
             </summary>
         </member>
+        <member name="T:Core.Utils.IComparable">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Core.Utils.IListST`1">
+            <summary>
+            List扩展结构
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:Core.Utils.IListST`1.GetLength">
+            <summary>
+            获取长度
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Core.Utils.IListST`1.Clear">
+            <summary>
+            清空List数据
+            </summary>
+        </member>
+        <member name="M:Core.Utils.IListST`1.IsEmpty">
+            <summary>
+            是否为空
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Core.Utils.IListST`1.Append(`0)">
+            <summary>
+            添加元素到List
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:Core.Utils.IListST`1.Insert(`0,System.Int32)">
+            <summary>
+            在某个位置插入
+            </summary>
+            <param name="item"></param>
+            <param name="i"></param>
+        </member>
+        <member name="M:Core.Utils.IListST`1.Delete(System.Int32)">
+            <summary>
+            删除某个位置的元素
+            </summary>
+            <param name="i"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Core.Utils.IListST`1.GetElem(System.Int32)">
+            <summary>
+            获取某个位置的元素
+            </summary>
+            <param name="i"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Core.Utils.IListST`1.Locate(`0)">
+            <summary>
+            获取某个元素的位置
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Core.Utils.SequenceList`1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:Core.Utils.SequenceList`1.Item(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="index"></param>
+        </member>
+        <member name="P:Core.Utils.SequenceList`1.Last">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Core.Utils.SequenceList`1.Maxsize">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Core.Utils.SequenceList`1.#ctor(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="size"></param>
+        </member>
+        <member name="M:Core.Utils.SequenceList`1.GetLength">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Core.Utils.SequenceList`1.Clear">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Core.Utils.SequenceList`1.IsEmpty">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Core.Utils.SequenceList`1.IsFull">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Core.Utils.SequenceList`1.Append(`0)">
+            <summary>
+            
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:Core.Utils.SequenceList`1.Insert(`0,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="item"></param>
+            <param name="i"></param>
+        </member>
+        <member name="M:Core.Utils.SequenceList`1.Delete(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="i"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Core.Utils.SequenceList`1.GetElem(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="i"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Core.Utils.SequenceList`1.Locate(`0)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Core.Utils.SequenceList`1.PopOrder(Core.Utils.SequenceList{`0},System.Collections.IComparer)">
+            <summary>
+            
+            </summary>
+            <param name="L"></param>
+            <param name="comparable"></param>
+        </member>
+        <member name="M:Core.Utils.SequenceList`1.ReverseSequenceList(Core.Utils.SequenceList{`0})">
+            <summary>
+            
+            </summary>
+            <param name="L"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Core.Utils.SequenceList`1.Merge(Core.Utils.SequenceList{`0},Core.Utils.SequenceList{`0},System.Collections.IComparer)">
+            <summary>
+            
+            </summary>
+            <param name="La"></param>
+            <param name="Lb"></param>
+            <param name="comparable"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Core.Utils.SequenceList`1.Purge(Core.Utils.SequenceList{`0})">
+            <summary>
+            
+            </summary>
+            <param name="La"></param>
+            <returns></returns>
+        </member>
         <member name="T:Core.Utils.ITextHelper">
             <summary>
             字符辅助器接口。

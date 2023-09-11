@@ -845,7 +845,7 @@
         </member>
         <member name="F:Sirenix.OdinInspector.HideIfGroupAttribute.Animate">
             <summary>
-            Whether or not to slide the properties in and out when the state changes.
+            Whether or not to slide the properties in and out when the context changes.
             </summary>
         </member>
         <member name="F:Sirenix.OdinInspector.HideIfGroupAttribute.Value">
@@ -1488,7 +1488,7 @@
         </member>
         <member name="F:Sirenix.OdinInspector.ShowIfGroupAttribute.Animate">
             <summary>
-            Whether or not to slide the properties in and out when the state changes.
+            Whether or not to slide the properties in and out when the context changes.
             </summary>
         </member>
         <member name="F:Sirenix.OdinInspector.ShowIfGroupAttribute.Value">
@@ -2338,7 +2338,7 @@
              <para>Use this to disable properties when they are irrelevant.</para>
              </summary>
              <example>
-             <para>The following example shows how a property can be disabled by the state of a field.</para>
+             <para>The following example shows how a property can be disabled by the context of a field.</para>
              <code>
              public class MyComponent : MonoBehaviour
              {
@@ -2384,7 +2384,7 @@
         </member>
         <member name="M:Sirenix.OdinInspector.DisableIfAttribute.#ctor(System.String)">
             <summary>
-            Disables a property in the inspector, based on the state of a member.
+            Disables a property in the inspector, based on the context of a member.
             </summary>
             <param name="memberName">Name of member bool field, property, or method.</param>
         </member>
@@ -2630,7 +2630,7 @@
              <para>Use this to enable properties when they are relevant.</para>
              </summary>
              <example>
-             <para>The following example shows how a property can be enabled by the state of a field.</para>
+             <para>The following example shows how a property can be enabled by the context of a field.</para>
              <code>
              public class MyComponent : MonoBehaviour
              {
@@ -2679,7 +2679,7 @@
         </member>
         <member name="M:Sirenix.OdinInspector.EnableIfAttribute.#ctor(System.String)">
             <summary>
-            Enables a property in the inspector, based on the state of a member.
+            Enables a property in the inspector, based on the context of a member.
             </summary>
             <param name="memberName">Name of member bool field, property, or method.</param>
         </member>
@@ -2732,10 +2732,10 @@
         <member name="T:Sirenix.OdinInspector.HideIfAttribute">
              <summary>
              <para>HideIf is used on any property and can hide the property in the inspector.</para>
-             <para>Use this to hide irrelevant properties based on the current state of the object.</para>
+             <para>Use this to hide irrelevant properties based on the current context of the object.</para>
              </summary>
              <example>
-             <para>This example shows a component with fields hidden by the state of another field.</para>
+             <para>This example shows a component with fields hidden by the context of another field.</para>
              <code>
              public class MyComponent : MonoBehaviour
              {
@@ -2785,7 +2785,7 @@
         </member>
         <member name="F:Sirenix.OdinInspector.HideIfAttribute.Animate">
             <summary>
-            Whether or not to slide the property in and out when the state changes.
+            Whether or not to slide the property in and out when the context changes.
             </summary>
         </member>
         <member name="M:Sirenix.OdinInspector.HideIfAttribute.#ctor(System.String,System.Boolean)">
@@ -2793,7 +2793,7 @@
             Hides a property in the inspector, if the specified member returns true.
             </summary>
             <param name="memberName">Name of a bool field, property or function to show or hide the property.</param>
-            <param name="animate">Whether or not to slide the property in and out when the state changes.</param>
+            <param name="animate">Whether or not to slide the property in and out when the context changes.</param>
         </member>
         <member name="M:Sirenix.OdinInspector.HideIfAttribute.#ctor(System.String,System.Object,System.Boolean)">
             <summary>
@@ -2801,7 +2801,7 @@
             </summary>
             <param name="memberName">Name of member to check the value of.</param>
             <param name="optionalValue">The value to check for.</param>
-            <param name="animate">Whether or not to slide the property in and out when the state changes.</param>
+            <param name="animate">Whether or not to slide the property in and out when the context changes.</param>
         </member>
         <member name="T:Sirenix.OdinInspector.HideInPlayModeAttribute">
             <summary>
@@ -5167,10 +5167,10 @@
         <member name="T:Sirenix.OdinInspector.ShowIfAttribute">
              <summary>
              <para>ShowIf is used on any property and can hide the property in the inspector.</para>
-             <para>Use this to hide irrelevant properties based on the current state of the object.</para>
+             <para>Use this to hide irrelevant properties based on the current context of the object.</para>
              </summary>
              <example>
-             <para>This example shows a component with fields hidden by the state of another field.</para>
+             <para>This example shows a component with fields hidden by the context of another field.</para>
              <code>
              public class MyComponent : MonoBehaviour
              {
@@ -5215,7 +5215,7 @@
         </member>
         <member name="F:Sirenix.OdinInspector.ShowIfAttribute.Animate">
             <summary>
-            Whether or not to slide the property in and out when the state changes.
+            Whether or not to slide the property in and out when the context changes.
             </summary>
         </member>
         <member name="F:Sirenix.OdinInspector.ShowIfAttribute.Value">
@@ -5228,7 +5228,7 @@
             Shows a property in the inspector, if the specified member returns true.
             </summary>
             <param name="memberName">Name of a bool field, property or function to show or hide the property.</param>
-            <param name="animate">Whether or not to slide the property in and out when the state changes.</param>
+            <param name="animate">Whether or not to slide the property in and out when the context changes.</param>
         </member>
         <member name="M:Sirenix.OdinInspector.ShowIfAttribute.#ctor(System.String,System.Object,System.Boolean)">
             <summary>
@@ -5236,7 +5236,7 @@
             </summary>
             <param name="memberName">Name of a bool field, property or method to test the value of.</param>
             <param name="optionalValue">The value the member should equal for the property to shown.</param>
-            <param name="animate">Whether or not to slide the property in and out when the state changes.</param>
+            <param name="animate">Whether or not to slide the property in and out when the context changes.</param>
         </member>
         <member name="T:Sirenix.OdinInspector.WrapAttribute">
             <summary>

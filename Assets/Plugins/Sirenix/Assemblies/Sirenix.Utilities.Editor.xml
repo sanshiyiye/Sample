@@ -720,7 +720,7 @@
         <member name="M:Sirenix.Utilities.Editor.Expressions.ExpressionUtility.ParseExpression(System.String,System.Boolean,System.Type,System.String@,System.Boolean)">
             <summary>Parses an expression and tries to emit a delegate method.</summary>
             <param name="expression">The expression to parse.</param>
-            <param name="isStatic">Indicates if the expression should be static instead of instanced.</param>
+            <param name="isFixed">Indicates if the expression should be static instead of instanced.</param>
             <param name="contextType">The context type for the execution of the expression.</param>
             <param name="errorMessage">Output for any errors that may occur.</param>
             <param name="richTextError">If <c>true</c> then error message will be formatted with color tags. Otherwise, the error message will be formatted with text only.</param>
@@ -729,7 +729,7 @@
         <member name="M:Sirenix.Utilities.Editor.Expressions.ExpressionUtility.ParseExpression(System.String,System.Boolean,System.Type,System.Type[],System.String@,System.Boolean)">
             <summary>Parses an expression and tries to emit a delegate method.</summary>
             <param name="expression">The expression to parse.</param>
-            <param name="isStatic">Indicates if the expression should be static instead of instanced.</param>
+            <param name="isFixed">Indicates if the expression should be static instead of instanced.</param>
             <param name="contextType">The context type for the execution of the expression.</param>
             <param name="parameters">The parameters of the expression delegate.</param>
             <param name="errorMessage">Output for any errors that may occur.</param>
@@ -739,7 +739,7 @@
         <member name="M:Sirenix.Utilities.Editor.Expressions.ExpressionUtility.ParseExpression(System.String,System.Boolean,System.Type,System.Type[],System.String[],System.String@,System.Boolean)">
             <summary>Parses an expression and tries to emit a delegate method.</summary>
             <param name="expression">The expression to parse.</param>
-            <param name="isStatic">Indicates if the expression should be static instead of instanced.</param>
+            <param name="isFixed">Indicates if the expression should be static instead of instanced.</param>
             <param name="contextType">The context type for the execution of the expression.</param>
             <param name="parameters">The parameters of the expression delegate.</param>
             <param name="parameterNames">The names of the expression's parameters, for use with the named parameter syntax.</param>
@@ -775,7 +775,7 @@
         <member name="M:Sirenix.Utilities.Editor.Expressions.ExpressionUtility.ParseFunc``2(System.String,System.Boolean,System.Type,System.String@,System.Boolean)">
             <summary>Parses an expression and emits an ExpressionFunc method.</summary>
             <param name="expression">The expression to parse.</param>
-            <param name="isStatic">Indicates if the expression should be static instead of instanced.</param>
+            <param name="isFixed">Indicates if the expression should be static instead of instanced.</param>
             <param name="contextType">The context type for the execution of the expression.</param>
             <param name="errorMessage">Output for any errors that may occur.</param>
             <param name="richTextError">If <c>true</c> then error message will be formatted with color tags. Otherwise, the error message will be formatted with text only.</param>
@@ -784,7 +784,7 @@
         <member name="M:Sirenix.Utilities.Editor.Expressions.ExpressionUtility.ParseFunc``3(System.String,System.Boolean,System.Type,System.String@,System.Boolean)">
             <summary>Parses an expression and emits an ExpressionFunc method.</summary>
             <param name="expression">The expression to parse.</param>
-            <param name="isStatic">Indicates if the expression should be static instead of instanced.</param>
+            <param name="isFixed">Indicates if the expression should be static instead of instanced.</param>
             <param name="contextType">The context type for the execution of the expression.</param>
             <param name="errorMessage">Output for any errors that may occur.</param>
             <param name="richTextError">If <c>true</c> then error message will be formatted with color tags. Otherwise, the error message will be formatted with text only.</param>
@@ -793,7 +793,7 @@
         <member name="M:Sirenix.Utilities.Editor.Expressions.ExpressionUtility.ParseFunc``4(System.String,System.Boolean,System.Type,System.String@,System.Boolean)">
             <summary>Parses an expression and emits an ExpressionFunc method.</summary>
             <param name="expression">The expression to parse.</param>
-            <param name="isStatic">Indicates if the expression should be static instead of instanced.</param>
+            <param name="isFixed">Indicates if the expression should be static instead of instanced.</param>
             <param name="contextType">The context type for the execution of the expression.</param>
             <param name="errorMessage">Output for any errors that may occur.</param>
             <param name="richTextError">If <c>true</c> then error message will be formatted with color tags. Otherwise, the error message will be formatted with text only.</param>
@@ -802,7 +802,7 @@
         <member name="M:Sirenix.Utilities.Editor.Expressions.ExpressionUtility.ParseFunc``5(System.String,System.Boolean,System.Type,System.String@,System.Boolean)">
             <summary>Parses an expression and emits an ExpressionFunc method.</summary>
             <param name="expression">The expression to parse.</param>
-            <param name="isStatic">Indicates if the expression should be static instead of instanced.</param>
+            <param name="isFixed">Indicates if the expression should be static instead of instanced.</param>
             <param name="contextType">The context type for the execution of the expression.</param>
             <param name="errorMessage">Output for any errors that may occur.</param>
             <param name="richTextError">If <c>true</c> then error message will be formatted with color tags. Otherwise, the error message will be formatted with text only.</param>
@@ -811,7 +811,7 @@
         <member name="M:Sirenix.Utilities.Editor.Expressions.ExpressionUtility.ParseFunc``6(System.String,System.Boolean,System.Type,System.String@,System.Boolean)">
             <summary>Parses an expression and emits an ExpressionFunc method.</summary>
             <param name="expression">The expression to parse.</param>
-            <param name="isStatic">Indicates if the expression should be static instead of instanced.</param>
+            <param name="isFixed">Indicates if the expression should be static instead of instanced.</param>
             <param name="contextType">The context type for the execution of the expression.</param>
             <param name="errorMessage">Output for any errors that may occur.</param>
             <param name="richTextError">If <c>true</c> then error message will be formatted with color tags. Otherwise, the error message will be formatted with text only.</param>
@@ -820,7 +820,7 @@
         <member name="M:Sirenix.Utilities.Editor.Expressions.ExpressionUtility.ParseFunc``7(System.String,System.Boolean,System.Type,System.String@,System.Boolean)">
             <summary>Parses an expression and emits an ExpressionFunc method.</summary>
             <param name="expression">The expression to parse.</param>
-            <param name="isStatic">Indicates if the expression should be static instead of instanced.</param>
+            <param name="isFixed">Indicates if the expression should be static instead of instanced.</param>
             <param name="contextType">The context type for the execution of the expression.</param>
             <param name="errorMessage">Output for any errors that may occur.</param>
             <param name="richTextError">If <c>true</c> then error message will be formatted with color tags. Otherwise, the error message will be formatted with text only.</param>
@@ -829,7 +829,7 @@
         <member name="M:Sirenix.Utilities.Editor.Expressions.ExpressionUtility.ParseFunc``8(System.String,System.Boolean,System.Type,System.String@,System.Boolean)">
             <summary>Parses an expression and emits an ExpressionFunc method.</summary>
             <param name="expression">The expression to parse.</param>
-            <param name="isStatic">Indicates if the expression should be static instead of instanced.</param>
+            <param name="isFixed">Indicates if the expression should be static instead of instanced.</param>
             <param name="contextType">The context type for the execution of the expression.</param>
             <param name="errorMessage">Output for any errors that may occur.</param>
             <param name="richTextError">If <c>true</c> then error message will be formatted with color tags. Otherwise, the error message will be formatted with text only.</param>
@@ -838,7 +838,7 @@
         <member name="M:Sirenix.Utilities.Editor.Expressions.ExpressionUtility.ParseFunc``9(System.String,System.Boolean,System.Type,System.String@,System.Boolean)">
             <summary>Parses an expression and emits an ExpressionFunc method.</summary>
             <param name="expression">The expression to parse.</param>
-            <param name="isStatic">Indicates if the expression should be static instead of instanced.</param>
+            <param name="isFixed">Indicates if the expression should be static instead of instanced.</param>
             <param name="contextType">The context type for the execution of the expression.</param>
             <param name="errorMessage">Output for any errors that may occur.</param>
             <param name="richTextError">If <c>true</c> then error message will be formatted with color tags. Otherwise, the error message will be formatted with text only.</param>
@@ -847,7 +847,7 @@
         <member name="M:Sirenix.Utilities.Editor.Expressions.ExpressionUtility.ParseFunc``10(System.String,System.Boolean,System.Type,System.String@,System.Boolean)">
             <summary>Parses an expression and emits an ExpressionFunc method.</summary>
             <param name="expression">The expression to parse.</param>
-            <param name="isStatic">Indicates if the expression should be static instead of instanced.</param>
+            <param name="isFixed">Indicates if the expression should be static instead of instanced.</param>
             <param name="contextType">The context type for the execution of the expression.</param>
             <param name="errorMessage">Output for any errors that may occur.</param>
             <param name="richTextError">If <c>true</c> then error message will be formatted with color tags. Otherwise, the error message will be formatted with text only.</param>
@@ -864,7 +864,7 @@
         <member name="M:Sirenix.Utilities.Editor.Expressions.ExpressionUtility.ParseAction``1(System.String,System.Boolean,System.Type,System.String@,System.Boolean)">
             <summary>Parses an expression and emits an ExpressionAction method.</summary>
             <param name="expression">The expression to parse.</param>
-            <param name="isStatic">Indicates if the expression should be static instead of instanced.</param>
+            <param name="isFixed">Indicates if the expression should be static instead of instanced.</param>
             <param name="contextType">The context type for the execution of the expression.</param>
             <param name="errorMessage">Output for any errors that may occur.</param>
             <param name="richTextError">If <c>true</c> then error message will be formatted with color tags. Otherwise, the error message will be formatted with text only.</param>
@@ -873,7 +873,7 @@
         <member name="M:Sirenix.Utilities.Editor.Expressions.ExpressionUtility.ParseAction``2(System.String,System.Boolean,System.Type,System.String@,System.Boolean)">
             <summary>Parses an expression and emits an ExpressionAction method.</summary>
             <param name="expression">The expression to parse.</param>
-            <param name="isStatic">Indicates if the expression should be static instead of instanced.</param>
+            <param name="isFixed">Indicates if the expression should be static instead of instanced.</param>
             <param name="contextType">The context type for the execution of the expression.</param>
             <param name="errorMessage">Output for any errors that may occur.</param>
             <param name="richTextError">If <c>true</c> then error message will be formatted with color tags. Otherwise, the error message will be formatted with text only.</param>
@@ -882,7 +882,7 @@
         <member name="M:Sirenix.Utilities.Editor.Expressions.ExpressionUtility.ParseAction``3(System.String,System.Boolean,System.Type,System.String@,System.Boolean)">
             <summary>Parses an expression and emits an ExpressionAction method.</summary>
             <param name="expression">The expression to parse.</param>
-            <param name="isStatic">Indicates if the expression should be static instead of instanced.</param>
+            <param name="isFixed">Indicates if the expression should be static instead of instanced.</param>
             <param name="contextType">The context type for the execution of the expression.</param>
             <param name="errorMessage">Output for any errors that may occur.</param>
             <param name="richTextError">If <c>true</c> then error message will be formatted with color tags. Otherwise, the error message will be formatted with text only.</param>
@@ -891,7 +891,7 @@
         <member name="M:Sirenix.Utilities.Editor.Expressions.ExpressionUtility.ParseAction``4(System.String,System.Boolean,System.Type,System.String@,System.Boolean)">
             <summary>Parses an expression and emits an ExpressionAction method.</summary>
             <param name="expression">The expression to parse.</param>
-            <param name="isStatic">Indicates if the expression should be static instead of instanced.</param>
+            <param name="isFixed">Indicates if the expression should be static instead of instanced.</param>
             <param name="contextType">The context type for the execution of the expression.</param>
             <param name="errorMessage">Output for any errors that may occur.</param>
             <param name="richTextError">If <c>true</c> then error message will be formatted with color tags. Otherwise, the error message will be formatted with text only.</param>
@@ -900,7 +900,7 @@
         <member name="M:Sirenix.Utilities.Editor.Expressions.ExpressionUtility.ParseAction``5(System.String,System.Boolean,System.Type,System.String@,System.Boolean)">
             <summary>Parses an expression and emits an ExpressionAction method.</summary>
             <param name="expression">The expression to parse.</param>
-            <param name="isStatic">Indicates if the expression should be static instead of instanced.</param>
+            <param name="isFixed">Indicates if the expression should be static instead of instanced.</param>
             <param name="contextType">The context type for the execution of the expression.</param>
             <param name="errorMessage">Output for any errors that may occur.</param>
             <param name="richTextError">If <c>true</c> then error message will be formatted with color tags. Otherwise, the error message will be formatted with text only.</param>
@@ -909,7 +909,7 @@
         <member name="M:Sirenix.Utilities.Editor.Expressions.ExpressionUtility.ParseAction``6(System.String,System.Boolean,System.Type,System.String@,System.Boolean)">
             <summary>Parses an expression and emits an ExpressionAction method.</summary>
             <param name="expression">The expression to parse.</param>
-            <param name="isStatic">Indicates if the expression should be static instead of instanced.</param>
+            <param name="isFixed">Indicates if the expression should be static instead of instanced.</param>
             <param name="contextType">The context type for the execution of the expression.</param>
             <param name="errorMessage">Output for any errors that may occur.</param>
             <param name="richTextError">If <c>true</c> then error message will be formatted with color tags. Otherwise, the error message will be formatted with text only.</param>
@@ -918,7 +918,7 @@
         <member name="M:Sirenix.Utilities.Editor.Expressions.ExpressionUtility.ParseAction``7(System.String,System.Boolean,System.Type,System.String@,System.Boolean)">
             <summary>Parses an expression and emits an ExpressionAction method.</summary>
             <param name="expression">The expression to parse.</param>
-            <param name="isStatic">Indicates if the expression should be static instead of instanced.</param>
+            <param name="isFixed">Indicates if the expression should be static instead of instanced.</param>
             <param name="contextType">The context type for the execution of the expression.</param>
             <param name="errorMessage">Output for any errors that may occur.</param>
             <param name="richTextError">If <c>true</c> then error message will be formatted with color tags. Otherwise, the error message will be formatted with text only.</param>
@@ -927,7 +927,7 @@
         <member name="M:Sirenix.Utilities.Editor.Expressions.ExpressionUtility.ParseAction``8(System.String,System.Boolean,System.Type,System.String@,System.Boolean)">
             <summary>Parses an expression and emits an ExpressionAction method.</summary>
             <param name="expression">The expression to parse.</param>
-            <param name="isStatic">Indicates if the expression should be static instead of instanced.</param>
+            <param name="isFixed">Indicates if the expression should be static instead of instanced.</param>
             <param name="contextType">The context type for the execution of the expression.</param>
             <param name="errorMessage">Output for any errors that may occur.</param>
             <param name="richTextError">If <c>true</c> then error message will be formatted with color tags. Otherwise, the error message will be formatted with text only.</param>
@@ -936,7 +936,7 @@
         <member name="M:Sirenix.Utilities.Editor.Expressions.ExpressionUtility.ParseAction``9(System.String,System.Boolean,System.Type,System.String@,System.Boolean)">
             <summary>Parses an expression and emits an ExpressionAction method.</summary>
             <param name="expression">The expression to parse.</param>
-            <param name="isStatic">Indicates if the expression should be static instead of instanced.</param>
+            <param name="isFixed">Indicates if the expression should be static instead of instanced.</param>
             <param name="contextType">The context type for the execution of the expression.</param>
             <param name="errorMessage">Output for any errors that may occur.</param>
             <param name="richTextError">If <c>true</c> then error message will be formatted with color tags. Otherwise, the error message will be formatted with text only.</param>
@@ -2351,7 +2351,7 @@
         </member>
         <member name="M:Sirenix.Utilities.Editor.GUIHelper.PushGUIEnabled(System.Boolean)">
             <summary>
-            Pushes a state to the GUI enabled stack. Remember to pop the state with <see cref="M:Sirenix.Utilities.Editor.GUIHelper.PopGUIEnabled"/>.
+            Pushes a context to the GUI enabled stack. Remember to pop the context with <see cref="M:Sirenix.Utilities.Editor.GUIHelper.PopGUIEnabled"/>.
             </summary>
             <param name="enabled">If set to <c>true</c> GUI will be enabled. Otherwise GUI will be disabled.</param>
         </member>
@@ -2362,19 +2362,19 @@
         </member>
         <member name="M:Sirenix.Utilities.Editor.GUIHelper.PushIsDrawingDictionaryKey(System.Boolean)">
             <summary>
-            Pushes a state to the IsDrawingDictionaryKey stack. Remember to pop the state with <see cref="M:Sirenix.Utilities.Editor.GUIHelper.PopIsDrawingDictionaryKey"/>.
+            Pushes a context to the IsDrawingDictionaryKey stack. Remember to pop the context with <see cref="M:Sirenix.Utilities.Editor.GUIHelper.PopIsDrawingDictionaryKey"/>.
             </summary>
         </member>
         <member name="M:Sirenix.Utilities.Editor.GUIHelper.PopIsDrawingDictionaryKey">
             <summary>
-            Pops the state pushed by <see cref="M:Sirenix.Utilities.Editor.GUIHelper.PushIsDrawingDictionaryKey(System.Boolean)"/>
+            Pops the context pushed by <see cref="M:Sirenix.Utilities.Editor.GUIHelper.PushIsDrawingDictionaryKey(System.Boolean)"/>
             </summary>
         </member>
         <member name="M:Sirenix.Utilities.Editor.GUIHelper.PushHierarchyMode(System.Boolean,System.Boolean)">
             <summary>
-            Pushes the hierarchy mode to the stack. Remember to pop the state with <see cref="M:Sirenix.Utilities.Editor.GUIHelper.PopHierarchyMode"/>.
+            Pushes the hierarchy mode to the stack. Remember to pop the context with <see cref="M:Sirenix.Utilities.Editor.GUIHelper.PopHierarchyMode"/>.
             </summary>
-            <param name="hierarchyMode">The hierachy mode state to push.</param>
+            <param name="hierarchyMode">The hierachy mode context to push.</param>
             <param name="preserveCurrentLabelWidth">Changing hierachy mode also changes how label-widths are calcualted. By default, we try to keep the current label width.</param>
         </member>
         <member name="M:Sirenix.Utilities.Editor.GUIHelper.PopHierarchyMode">
@@ -2384,13 +2384,13 @@
         </member>
         <member name="M:Sirenix.Utilities.Editor.GUIHelper.PushIsBoldLabel(System.Boolean)">
             <summary>
-            Pushes bold label state to the stack. Remember to pop with <see cref="M:Sirenix.Utilities.Editor.GUIHelper.PopIsBoldLabel"/>.
+            Pushes bold label context to the stack. Remember to pop with <see cref="M:Sirenix.Utilities.Editor.GUIHelper.PopIsBoldLabel"/>.
             </summary>
             <param name="isBold">Value indicating if labels should be bold or not.</param>
         </member>
         <member name="M:Sirenix.Utilities.Editor.GUIHelper.PopIsBoldLabel">
             <summary>
-            Pops the bold label state pushed by <see cref="M:Sirenix.Utilities.Editor.GUIHelper.PushIsBoldLabel(System.Boolean)"/>.
+            Pops the bold label context pushed by <see cref="M:Sirenix.Utilities.Editor.GUIHelper.PushIsBoldLabel(System.Boolean)"/>.
             </summary>
         </member>
         <member name="M:Sirenix.Utilities.Editor.GUIHelper.PushIndentLevel(System.Int32)">
@@ -5428,7 +5428,7 @@
         </member>
         <member name="F:Sirenix.Utilities.Editor.SirenixEditorGUI.MixedValueDashChar">
             <summary>
-            The mixed value dash character, to show when something has mixed values;
+            The mixed value dash _searchItem, to show when something has mixed values;
             </summary>
         </member>
         <member name="P:Sirenix.Utilities.Editor.SirenixEditorGUI.DefaultFadeGroupDuration">
@@ -5752,7 +5752,7 @@
             Draws a toolbar icon button.
             </summary>
             <param name="content">The GUI content for the button.</param>
-            <param name="selected">Whether the button state is selected or not</param>
+            <param name="selected">Whether the button context is selected or not</param>
             <returns><c>true</c> if the button was pressed. Otherwise <c>false</c>.</returns>
         </member>
         <member name="M:Sirenix.Utilities.Editor.SirenixEditorGUI.ToolbarButton(System.String,System.Boolean)">
@@ -5760,32 +5760,32 @@
             Draws a toolbar icon button.
             </summary>
             <param name="label">The label for the button.</param>
-            <param name="selected">Whether the button state is selected or not</param>
+            <param name="selected">Whether the button context is selected or not</param>
             <returns><c>true</c> if the button was pressed. Otherwise <c>false</c>.</returns>
         </member>
         <member name="M:Sirenix.Utilities.Editor.SirenixEditorGUI.ToolbarToggle(System.Boolean,Sirenix.Utilities.Editor.EditorIcon)">
             <summary>
             Draws a toolbar toggle.
             </summary>
-            <param name="isActive">Current state of the toggle.</param>
+            <param name="isActive">Current context of the toggle.</param>
             <param name="icon">The icon for the toggle.</param>
-            <returns>The state of the toggle.</returns>
+            <returns>The context of the toggle.</returns>
         </member>
         <member name="M:Sirenix.Utilities.Editor.SirenixEditorGUI.ToolbarToggle(System.Boolean,UnityEngine.GUIContent)">
             <summary>
             Draws a toolbar toggle.
             </summary>
-            <param name="isActive">Current state of the toggle.</param>
+            <param name="isActive">Current context of the toggle.</param>
             <param name="content">The GUI content for the button.</param>
-            <returns>The state of the toggle.</returns>
+            <returns>The context of the toggle.</returns>
         </member>
         <member name="M:Sirenix.Utilities.Editor.SirenixEditorGUI.ToolbarToggle(System.Boolean,System.String)">
             <summary>
             Draws a toolbar toggle.
             </summary>
-            <param name="isActive">Current state of the toggle.</param>
+            <param name="isActive">Current context of the toggle.</param>
             <param name="text">The text for the toggle.</param>
-            <returns>The state of the toggle.</returns>
+            <returns>The context of the toggle.</returns>
         </member>
         <member name="M:Sirenix.Utilities.Editor.SirenixEditorGUI.ToolbarTab(System.Boolean,System.String)">
             <summary>
@@ -5946,23 +5946,23 @@
             </summary>
             <param name="indent">The indent of the button.</param>
             <param name="text">The text of the button.</param>
-            <param name="isActive">The current state of the button.</param>
+            <param name="isActive">The current context of the button.</param>
             <param name="icon">The texture icon for the button.</param>
-            <returns>The current state of the button.</returns>
+            <returns>The current context of the button.</returns>
         </member>
         <member name="M:Sirenix.Utilities.Editor.SirenixEditorGUI.BeginFadeGroup(System.Object,System.Boolean)">
             <summary>
             Begins a fade group. Remember to end with <see cref="M:Sirenix.Utilities.Editor.SirenixEditorGUI.EndFadeGroup"/>.
             </summary>
             <param name="key">The key for the fade group.</param>
-            <param name="isVisible">Current state of the fade group.</param>
+            <param name="isVisible">Current context of the fade group.</param>
         </member>
         <member name="M:Sirenix.Utilities.Editor.SirenixEditorGUI.BeginFadeGroup(System.Object,System.Boolean,System.Single@)">
             <summary>
             Begins a fade group. Remember to end with <see cref="M:Sirenix.Utilities.Editor.SirenixEditorGUI.EndFadeGroup" />.
             </summary>
             <param name="key">The key for the fade group.</param>
-            <param name="isVisible">Current state of the fade group.</param>
+            <param name="isVisible">Current context of the fade group.</param>
             <param name="t">A value between 0 and 1 indicating how expanded the fade group is.</param>
         </member>
         <member name="M:Sirenix.Utilities.Editor.SirenixEditorGUI.BeginFadeGroup(System.Object,System.Object,System.Boolean)">
@@ -5971,7 +5971,7 @@
             </summary>
             <param name="primaryKey">The primary key for the fade group.</param>
             <param name="secondaryKey">The secondly key for the fade group.</param>
-            <param name="isVisible">Current state of the fade group.</param>
+            <param name="isVisible">Current context of the fade group.</param>
         </member>
         <member name="M:Sirenix.Utilities.Editor.SirenixEditorGUI.BeginFadeGroup(System.Object,System.String,System.Boolean)">
             <summary>
@@ -5979,14 +5979,14 @@
             </summary>
             <param name="key">The key for the fade group.</param>
             <param name="name">The name of the fade group.</param>
-            <param name="isVisible">Current state of the fade group.</param>
+            <param name="isVisible">Current context of the fade group.</param>
         </member>
         <member name="M:Sirenix.Utilities.Editor.SirenixEditorGUI.BeginFadeGroup(System.Object,System.Boolean,System.Single)">
             <summary>
             Begins a fade group. Remember to end with <see cref="M:Sirenix.Utilities.Editor.SirenixEditorGUI.EndFadeGroup"/>.
             </summary>
             <param name="key">The key for the fade group.</param>
-            <param name="isVisible">Current state of the fade group.</param>
+            <param name="isVisible">Current context of the fade group.</param>
             <param name="duration">The duration of fade in and out.</param>
         </member>
         <member name="M:Sirenix.Utilities.Editor.SirenixEditorGUI.BeginFadeGroup(System.Object,System.Boolean,System.Single@,System.Single)">
@@ -5994,7 +5994,7 @@
             Begins a fade group. Remember to end with <see cref="M:Sirenix.Utilities.Editor.SirenixEditorGUI.EndFadeGroup" />.
             </summary>
             <param name="key">The key for the fade group.</param>
-            <param name="isVisible">Current state of the fade group.</param>
+            <param name="isVisible">Current context of the fade group.</param>
             <param name="t">A value between 0 and 1 indicating how expanded the fade group is.</param>
             <param name="duration">The duration of fade in and out.</param>
         </member>
@@ -6004,7 +6004,7 @@
             </summary>
             <param name="primaryKey">The primary key for the fade group.</param>
             <param name="secondaryKey">The secondly key for the fade group.</param>
-            <param name="isVisible">Current state of the fade group.</param>
+            <param name="isVisible">Current context of the fade group.</param>
             <param name="duration">The duration of fade in and out.</param>
         </member>
         <member name="M:Sirenix.Utilities.Editor.SirenixEditorGUI.BeginFadeGroup(System.Object,System.String,System.Boolean,System.Single)">
@@ -6013,7 +6013,7 @@
             </summary>
             <param name="key">The key for the fade group.</param>
             <param name="name">The name of the fade group.</param>
-            <param name="isVisible">Current state of the fade group.</param>
+            <param name="isVisible">Current context of the fade group.</param>
             <param name="duration">The duration of fade in and out.</param>
         </member>
         <member name="M:Sirenix.Utilities.Editor.SirenixEditorGUI.BeginFadeGroup(System.Single)">
@@ -6031,18 +6031,18 @@
             <summary>
             Draws a foldout field where clicking on the label toggles to the foldout too.
             </summary>
-            <param name="isVisible">The current state of the foldout.</param>
+            <param name="isVisible">The current context of the foldout.</param>
             <param name="label">The label of the foldout.</param>
             <param name="style">The GUI style.</param>
             <returns>
-            The current state of the foldout.
+            The current context of the foldout.
             </returns>
         </member>
         <member name="M:Sirenix.Utilities.Editor.SirenixEditorGUI.Foldout(System.Boolean,UnityEngine.GUIContent,UnityEngine.GUIStyle)">
             <summary>
             Draws a foldout field where clicking on the label toggles to the foldout too.
             </summary>
-            <param name="isVisible">The current state of the foldout.</param>
+            <param name="isVisible">The current context of the foldout.</param>
             <param name="label">The label of the foldout.</param>
             <param name="style">The GUI style.</param>
         </member>
@@ -6050,7 +6050,7 @@
             <summary>
             Draws a foldout field where clicking on the label toggles to the foldout too.
             </summary>
-            <param name="isVisible">The current state of the foldout.</param>
+            <param name="isVisible">The current context of the foldout.</param>
             <param name="label">The label of the foldout.</param>
             <param name="valueRect">The value rect.</param>
             <param name="style">The GUI style.</param>
@@ -6060,7 +6060,7 @@
             Draws a foldout field where clicking on the label toggles to the foldout too.
             </summary>
             <param name="rect">The rect to draw the foldout field in.</param>
-            <param name="isVisible">The current state of the foldout.</param>
+            <param name="isVisible">The current context of the foldout.</param>
             <param name="label">The label of the foldout.</param>
             <param name="style">The style.</param>
         </member>

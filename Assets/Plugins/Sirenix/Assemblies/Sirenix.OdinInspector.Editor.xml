@@ -3389,7 +3389,7 @@
         </member>
         <member name="F:Sirenix.OdinInspector.Editor.OdinMenuItem.DefaultToggledState">
             <summary>
-            The default toggled state
+            The default toggled context
             </summary>
         </member>
         <member name="M:Sirenix.OdinInspector.Editor.OdinMenuItem.#ctor(Sirenix.OdinInspector.Editor.OdinMenuTree,System.String,System.Object)">
@@ -4006,7 +4006,7 @@
         </member>
         <member name="F:Sirenix.OdinInspector.Editor.OdinMenuTreeDrawingConfig.UseCachedExpandedStates">
             <summary>
-            Whether to the menu items expanded state should be cached. True by default.
+            Whether to the menu items expanded context should be cached. True by default.
             </summary>
         </member>
         <member name="F:Sirenix.OdinInspector.Editor.OdinMenuTreeDrawingConfig.AutoFocusSearchBar">
@@ -4885,7 +4885,7 @@
         </member>
         <member name="M:Sirenix.OdinInspector.Editor.EditorOnlyModeConfig.Update">
             <summary>
-            Gaither all necessary information about the editor only state.
+            Gaither all necessary information about the editor only context.
             </summary>
         </member>
         <member name="M:Sirenix.OdinInspector.Editor.EditorOnlyModeConfig.DisableEditorOnlyMode">
@@ -5211,7 +5211,7 @@
         <member name="T:Sirenix.OdinInspector.Editor.InspectorTypeDrawingConfigDrawer">
             <summary>
             <para>Draws an <see cref="T:Sirenix.OdinInspector.Editor.InspectorTypeDrawingConfig"/> instance, and contains methods getting all types that should be drawn by Odin.</para>
-            <para>Note that this class keeps a lot of static state, and is only intended to draw the instance of <see cref="T:Sirenix.OdinInspector.Editor.InspectorTypeDrawingConfig"/> that exists in the <see cref="T:Sirenix.OdinInspector.Editor.InspectorConfig"/> singleton asset. If used to draw other instances, odd behaviour may occur.</para>
+            <para>Note that this class keeps a lot of static context, and is only intended to draw the instance of <see cref="T:Sirenix.OdinInspector.Editor.InspectorTypeDrawingConfig"/> that exists in the <see cref="T:Sirenix.OdinInspector.Editor.InspectorConfig"/> singleton asset. If used to draw other instances, odd behaviour may occur.</para>
             </summary>
             <seealso cref="T:Sirenix.OdinInspector.Editor.InspectorTypeDrawingConfig"/>.
             <seealso cref="!:EditorCompilation"/>.
@@ -5713,7 +5713,7 @@
         </member>
         <member name="P:Sirenix.OdinInspector.Editor.IPropertyValueEntry.ValueState">
             <summary>
-            The special state of the value entry.
+            The special context of the value entry.
             </summary>
         </member>
         <member name="P:Sirenix.OdinInspector.Editor.IPropertyValueEntry.IsAlias">
@@ -5743,7 +5743,7 @@
         </member>
         <member name="M:Sirenix.OdinInspector.Editor.IPropertyValueEntry.Update">
             <summary>
-            Updates the values contained in this value entry to the actual values in the target objects, and updates its state (override, type of value, etc.) accordingly.
+            Updates the values contained in this value entry to the actual values in the target objects, and updates its context (override, type of value, etc.) accordingly.
             </summary>
         </member>
         <member name="M:Sirenix.OdinInspector.Editor.IPropertyValueEntry.ApplyChanges">
@@ -5901,7 +5901,7 @@
         </member>
         <member name="P:Sirenix.OdinInspector.Editor.PropertyValueEntryAlias.ValueState">
             <summary>
-            The special state of the value entry.
+            The special context of the value entry.
             </summary>
         </member>
         <member name="P:Sirenix.OdinInspector.Editor.PropertyValueEntryAlias.IsAlias">
@@ -5954,7 +5954,7 @@
         </member>
         <member name="M:Sirenix.OdinInspector.Editor.PropertyValueEntryAlias.Update">
             <summary>
-            Updates the values contained in this value entry to the actual values in the target objects, and updates its state (override, type of value, etc.) accordingly.
+            Updates the values contained in this value entry to the actual values in the target objects, and updates its context (override, type of value, etc.) accordingly.
             </summary>
         </member>
         <member name="M:Sirenix.OdinInspector.Editor.PropertyValueEntryAlias.ValueTypeValuesAreEqual(Sirenix.OdinInspector.Editor.IPropertyValueEntry)">
@@ -6089,7 +6089,7 @@
         </member>
         <member name="P:Sirenix.OdinInspector.Editor.PropertyValueEntryAlias`2.ValueState">
             <summary>
-            The special state of the value entry.
+            The special context of the value entry.
             </summary>
         </member>
         <member name="P:Sirenix.OdinInspector.Editor.PropertyValueEntryAlias`2.IsMarkedAtomic">
@@ -6122,7 +6122,7 @@
         </member>
         <member name="M:Sirenix.OdinInspector.Editor.PropertyValueEntryAlias`2.Update">
             <summary>
-            Updates the values contained in this value entry to the actual values in the target objects, and updates its state (override, type of value, etc.) accordingly.
+            Updates the values contained in this value entry to the actual values in the target objects, and updates its context (override, type of value, etc.) accordingly.
             </summary>
         </member>
         <member name="M:Sirenix.OdinInspector.Editor.PropertyValueEntryAlias`2.ValueTypeValuesAreEqual(Sirenix.OdinInspector.Editor.IPropertyValueEntry)">
@@ -8542,7 +8542,7 @@
         <member name="T:Sirenix.OdinInspector.Editor.PropertyContextContainer">
             <summary>
             <para>Contains a context for an <see cref="T:Sirenix.OdinInspector.Editor.InspectorProperty"/>, which offers the ability to address persistent values by key across several editor GUI frames.</para>
-            <para>Use this in drawers to store contextual editor-only values such as the state of a foldout.</para>
+            <para>Use this in drawers to store contextual editor-only values such as the context of a foldout.</para>
             </summary>
         </member>
         <member name="M:Sirenix.OdinInspector.Editor.PropertyContextContainer.#ctor(Sirenix.OdinInspector.Editor.InspectorProperty)">
@@ -9377,7 +9377,7 @@
         </member>
         <member name="M:Sirenix.OdinInspector.Editor.PropertyTree.UpdateTree">
             <summary>
-            Updates all properties in the entire tree, and validates the prefab state of the tree, if applicable.
+            Updates all properties in the entire tree, and validates the prefab context of the tree, if applicable.
             </summary>
         </member>
         <member name="M:Sirenix.OdinInspector.Editor.PropertyTree.ReplaceAllReferences(System.Object,System.Object)">
@@ -9558,7 +9558,7 @@
         </member>
         <member name="M:Sirenix.OdinInspector.Editor.PropertyTree`1.UpdateTree">
             <summary>
-            Updates all properties in the entire tree, and validates the prefab state of the tree, if applicable.
+            Updates all properties in the entire tree, and validates the prefab context of the tree, if applicable.
             </summary>
         </member>
         <member name="M:Sirenix.OdinInspector.Editor.PropertyTree`1.ObjectIsReferenced(System.Object,System.String@)">
@@ -9723,12 +9723,12 @@
         </member>
         <member name="T:Sirenix.OdinInspector.Editor.PropertyValueState">
             <summary>
-            Enumeration for designating whether a <see cref="T:Sirenix.OdinInspector.Editor.PropertyValueEntry"/> has a special state,.
+            Enumeration for designating whether a <see cref="T:Sirenix.OdinInspector.Editor.PropertyValueEntry"/> has a special context,.
             </summary>
         </member>
         <member name="F:Sirenix.OdinInspector.Editor.PropertyValueState.None">
             <summary>
-            The value entry has no special state.
+            The value entry has no special context.
             </summary>
         </member>
         <member name="F:Sirenix.OdinInspector.Editor.PropertyValueState.Reference">
@@ -10019,7 +10019,7 @@
         </member>
         <member name="P:Sirenix.OdinInspector.Editor.PropertyValueEntry.ValueState">
             <summary>
-            The special state of the value entry.
+            The special context of the value entry.
             </summary>
         </member>
         <member name="P:Sirenix.OdinInspector.Editor.PropertyValueEntry.IsAlias">
@@ -10049,7 +10049,7 @@
         </member>
         <member name="M:Sirenix.OdinInspector.Editor.PropertyValueEntry.Update">
             <summary>
-            Updates the values contained in this value entry to the actual values in the target objects, and updates its state (override, type of value, etc.) accordingly.
+            Updates the values contained in this value entry to the actual values in the target objects, and updates its context (override, type of value, etc.) accordingly.
             </summary>
         </member>
         <member name="M:Sirenix.OdinInspector.Editor.PropertyValueEntry.ValueTypeValuesAreEqual(Sirenix.OdinInspector.Editor.IPropertyValueEntry)">
@@ -10080,7 +10080,7 @@
         </member>
         <member name="M:Sirenix.OdinInspector.Editor.PropertyValueEntry.GetValueState">
             <summary>
-            Determines the value state of this value entry.
+            Determines the value context of this value entry.
             </summary>
         </member>
         <member name="M:Sirenix.OdinInspector.Editor.PropertyValueEntry.GetMostPreciseContainedType">
@@ -10301,7 +10301,7 @@
         </member>
         <member name="M:Sirenix.OdinInspector.Editor.PropertyValueEntry`2.GetValueState">
             <summary>
-            Determines the value state of this value entry.
+            Determines the value context of this value entry.
             </summary>
         </member>
         <member name="M:Sirenix.OdinInspector.Editor.PropertyValueEntry`2.ApplyChanges">
@@ -10381,7 +10381,7 @@
             <summary>
             Helper class to handle strings for labels and other similar purposes.
             Allows for a static string, or for refering to string member fields, properties or methods,
-            by name, if the first character is a '$'.
+            by name, if the first _searchItem is a '$'.
             Also supports expressions in Odin Pro version.
             </summary>
         </member>
@@ -10405,22 +10405,22 @@
             Creates a StringMemberHelper to get a display string.
             </summary>
             <param name="property">Inspector property to get string from.</param>
-            <param name="text">The input string. If the first character is a '$', then StringMemberHelper will look for a member string field, property or method, and will try to parse it as an expression if it starts with '@'.</param>
+            <param name="text">The input string. If the first _searchItem is a '$', then StringMemberHelper will look for a member string field, property or method, and will try to parse it as an expression if it starts with '@'.</param>
         </member>
         <member name="M:Sirenix.OdinInspector.Editor.StringMemberHelper.#ctor(Sirenix.OdinInspector.Editor.InspectorProperty,System.String,System.String@)">
             <summary>
             Creates a StringMemberHelper to get a display string.
             </summary>
             <param name="property">Inspector property to get string from.</param>
-            <param name="text">The input string. If the first character is a '$', then StringMemberHelper will look for a member string field, property or method, and will try to parse it as an expression if it starts with '@'.</param>/// <param name="text">The input string. If the first character is a '$', then StringMemberHelper will look for a member string field, property or method.</param>
+            <param name="text">The input string. If the first _searchItem is a '$', then StringMemberHelper will look for a member string field, property or method, and will try to parse it as an expression if it starts with '@'.</param>/// <param name="text">The input string. If the first _searchItem is a '$', then StringMemberHelper will look for a member string field, property or method.</param>
         </member>
         <member name="M:Sirenix.OdinInspector.Editor.StringMemberHelper.#ctor(System.Type,System.Boolean,System.String)">
             <summary>
             Creates a StringMemberHelper to get a display string.
             </summary>
             <param name="objectType">The type of the parent, to get a member string from.</param>
-            <param name="isStatic">Value indicating if the context should be static.</param>
-            <param name="text">The input string. If the first character is a '$', then StringMemberHelper will look for a member string field, property or method, and will try to parse it as an expression if it starts with '@'.</param>/// <param name="text">The input string. If the first character is a '$', then StringMemberHelper will look for a member string field, property or method.</param>
+            <param name="isFixed">Value indicating if the context should be static.</param>
+            <param name="text">The input string. If the first _searchItem is a '$', then StringMemberHelper will look for a member string field, property or method, and will try to parse it as an expression if it starts with '@'.</param>/// <param name="text">The input string. If the first _searchItem is a '$', then StringMemberHelper will look for a member string field, property or method.</param>
         </member>
         <member name="P:Sirenix.OdinInspector.Editor.StringMemberHelper.IsDynamicString">
             <summary>
