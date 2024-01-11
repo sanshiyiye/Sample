@@ -13,7 +13,9 @@
 *.userprefs
 *.pidb
 *.booproj
+/.vscode
 #/Packages/FrameWork/
 /Assets/StreamingAssets
 /Assets/StreamingAssets.meta
 /Assets/Librarys
+/ProjectSettings

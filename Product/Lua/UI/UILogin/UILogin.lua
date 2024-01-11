@@ -1,3 +1,4 @@
+------AutoLuaGenerator Start----------------------
 ---@type UILogin
 local UILogin = {}
 extends(UILogin, UIBase)
@@ -7,7 +8,7 @@ function UILogin.New(controller)
     newUILogin.Controller = controller
     return newUILogin
 end
-
+------AutoLuaGenerator End-----------------------
 ---测试场景数组
 local scenes = { "Scene/Scene1001/Scene1001", "Scene/Scene1002/Scene1002" }
 

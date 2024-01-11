@@ -1,11 +1,11 @@
-
+------AutoLuaGenerator Start----------------------
 local UIBase = import('UI/UIBase')
 local BillboardData = import('UI/UIBillboard/BillboardData')
 ---@type UIBillboard
 local UIBillboard = {}
 
 extends(UIBillboard, UIBase)
-
+------AutoLuaGenerator End-----------------------
 function UIBillboard:OnInit(controller)
     print("================================ UIBillboard:OnInit ============================")
     self.Controller = controller
@@ -16,11 +16,12 @@ function UIBillboard:OnInit(controller)
         self.txtContent = self:GetUIText('txtContent')
     end
     Tools.SetButton(self.btn_close, function()
-        print('Click the button!!!')
+        print('Click the btn_close!!!')
         UIModule.getInstance():CloseWindow("UIBillboard")
         UIModule.getInstance():OpenWindow("UILogin")
 
     end)
+
 end
 
 function UIBillboard:OnOpen()

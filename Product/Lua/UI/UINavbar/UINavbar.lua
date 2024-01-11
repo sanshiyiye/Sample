@@ -16,7 +16,8 @@ end
 function UINavbar:OnInit(controller)
     Tools.SetButton(self.btnBack,function()
         -- UIModule.getInstance():CloseAllWindows()
-        UIModule.getInstance():OpenWindow("UILogin","name:user1,pwd:123")
+        UIModule.getInstance():CloseLastWindow()
+        -- UIModule.getInstance():OpenWindow("UILogin","name:user1,pwd:123")
     end)
 end
 
