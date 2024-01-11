@@ -15,17 +15,21 @@ public class MeshCast : MonoBehaviour
 
     public GameObject target;
 
+    public GameObject test;
     // public GameObject prefab;
     // Start is called before the first frame update
     void Start()
     {
 
+        var go = new GameObject();
+        go.AddComponent<MeshRenderer>();
+        go.transform.parent = test.transform;
+        Debug.Log("Start");
+        // if (button)
+        // {
+        //     UIClickLisener.Get(button, OnClick);
+        // }
 
-        if (button)
-        {
-            UIClickLisener.Get(button, OnClick);
-        }
-        
     }
 
     void OnClick(MonoBehaviour go)

@@ -152,7 +152,8 @@ public  class LuaUIController : UIController
             }
 
             SetOutlet(_luaTable);
-            //TODO 优化:只有代码变化才重新执行OnInit函数
+            //TODO @优化:只有代码变化才重新执行OnInit函数
+
             var luaInitObj = _luaTable.Get<LuaFunction>("OnInit");
             Debuger.Assert(luaInitObj is LuaFunction, "Must have OnInit function - {0}", UIName);
 

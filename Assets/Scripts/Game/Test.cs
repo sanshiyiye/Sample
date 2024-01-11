@@ -24,10 +24,21 @@ public class Test : MonoBehaviour
     private void Awake()
     {
         a = new MyStruct();
-        
+        // this.transform.GetComponent<RectTransform>().SetInsetAndSizeFromParentEdge(RectTransform.Edge.Bottom);
         a.x = 1;
         a.y = 2;
         //list.Add(a);
+        
+    }
+    
+
+    public bool CompareTwoGameObject(GameObject obj1, GameObject obj2){
+
+        if (obj1.transform.position == obj2.transform.position && obj1.transform.rotation == obj2.transform.rotation && obj1.transform.localScale == obj2.transform.localScale)
+        {
+            return true;
+        }
+        return false;
         
     }
 

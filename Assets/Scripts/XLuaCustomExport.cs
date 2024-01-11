@@ -309,7 +309,7 @@ public static class XLuaCustomExport
       typeof(DG.Tweening.PathType),
       typeof(DG.Tweening.RotateMode),
       typeof(DG.Tweening.ScrambleMode),
-      typeof(DG.Tweening.TweenType),
+      typeof(DG.Tweening.mTweenType),
       typeof(DG.Tweening.UpdateType),
 
       typeof(DG.Tweening.DOTween),

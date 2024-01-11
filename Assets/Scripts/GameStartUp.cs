@@ -19,6 +19,7 @@ using LogType = Core.Log.LogType;
 
 public class GameStartUp : BaseGame
 {
+    [ReadOnly]
     public bool isUpdate = false; // Start is called before the first frame update
     [Title("GameStart属性展示",bold: false)]
     [Delayed]
@@ -50,6 +51,10 @@ public class GameStartUp : BaseGame
         ErroeMessage = "DelayValue is error";
         return value > 100;
     }
+    /// <summary>
+    /// 初始化模块 早于游戏OnInit
+    /// </summary>
+    /// <returns></returns>
     protected override List<IModule> CreateModules()
     {
         var modules =  base.CreateModules();
@@ -84,7 +89,6 @@ public class GameStartUp : BaseGame
         //Init Config
         //Preload Reousrce
         //Main Scene Enter
-
     }
 
     public override void CheckUpdate()
@@ -101,12 +105,6 @@ public class GameStartUp : BaseGame
         
     }
     
-    
-    public IEnumerator Test()
-    { 
-        yield return  new WaitForSeconds(10);
-        
-    }
     
     public void OnApplicationQuit()
     {

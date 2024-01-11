@@ -65,13 +65,13 @@ public class MapManager : Singleton<MapManager>
         }
 
         /* 使用的类 */
-        public RuleTile tile_1; // ruleTile 对应的类，该类继承自 TileBase，意味着它也可以使用父类的一些基本方法
+        // public RuleTile tile_1; // ruleTile 对应的类，该类继承自 TileBase，意味着它也可以使用父类的一些基本方法
         public Tilemap tilemap_1;   // tilemap 对应的类，该类继承自 GridLayout，可以使用父类的一些基本方法
         public void RoleTile(Vector3Int pos ,Vector3 worldPos)
         {
        
         /* 放置与删除指定位置瓦块 */
-        tilemap_1.SetTile(pos, tile_1); // 将'tile_1'瓦块放置到'tilemap_1'瓦块地图的'pos'位置上
+        // tilemap_1.SetTile(pos, tile_1); // 将'tile_1'瓦块放置到'tilemap_1'瓦块地图的'pos'位置上
         tilemap_1.SetTile(pos, null);   // 将 tilemap_1'瓦块地图的'pos'位置上的瓦块清空
 
 /* 位置转换 */ 
@@ -79,7 +79,7 @@ public class MapManager : Singleton<MapManager>
 
 /* 获取位置上的瓦块 */
         TileBase tile_2 = tilemap_1.GetTile(currentPos);
-        RuleTile tile_3 = tilemap_1.GetTile<RuleTile>(currentPos);  // 获取'tilemap_1'中某个单元格的给定'currentPos'位置处的'tile of type RuleTile'
+        // RuleTile tile_3 = tilemap_1.GetTile<RuleTile>(currentPos);  // 获取'tilemap_1'中某个单元格的给定'currentPos'位置处的'tile of type RuleTile'
         }
         
         /// <summary>
