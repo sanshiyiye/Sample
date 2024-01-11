@@ -75,5 +75,39 @@ namespace SuperTiled2Unity.Editor
         {
             texture.CopyOwnPixels((int)dx, (int)dy, sourceRect);
         }
+
+        public static short[] GetPixelRGBA4444(this Texture2D texture, int x, int y)
+        {
+            
+            return null;
+        }
+        
+        public static void SetPixelRGBA4444(this Texture2D texture, int x, int y ,Color c)
+        {
+            var data = texture.GetRawTextureData();
+            var width = texture.width;
+            var r = ((byte) c.r << 8 -1) & 0xf0;
+            var g = ((byte) c.g << 8 - 1) & 0x0f;
+            var b = ((byte) c.b << 8 -1) & 0xf0;
+            var a = ((byte) c.a << 8 -1) & 0x0f;
+            // var bytesize = 2;
+            int index = x * 2 + y * 2 * width;
+            data[index] = (byte) (r + g);
+            data[index + 1] = (byte) (b + a);
+            // texture.LoadRawTextureData(data);
+            // var format = texture.format;
+            // switch (format)
+            // {
+            //     case TextureFormat.RGBA4444:
+            //         var bytesize = 2;
+            //         int index = x * bytesize + y * bytesize * width;
+            //         data[index] = (byte) (r + g);
+            //         data[index + 1] = (byte) (b + a);
+            //         break;
+            //     case TextureFormat.R16:
+            //         break;
+            //     
+            // }
+        }
     }
 }

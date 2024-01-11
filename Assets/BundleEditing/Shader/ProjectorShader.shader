@@ -8,7 +8,7 @@
     }
     SubShader
     {
-        Tags { "RenderType"="Opaque" }
+        Tags { "RenderType"="Opaque" "LightMode"="ForwardBase"}
         LOD 200
 
         
@@ -19,6 +19,7 @@
             CGPROGRAM
 
             #pragma target 3.0
+            // #pragma multi_compile_fwdbase
             #pragma vertex vert
             #pragma fragment frag
             #include "UnityCG.cginc"
@@ -59,6 +60,7 @@
                 half3 L = normalize(_WorldSpaceLightPos0.xyz);
                 half3 N = normalize(i.wNormal);
                 half fade = max(0,dot(L,N));
+                fixed3 ambient = UNITY_LIGHTMODEL_AMBIENT.xyz;
                 fade += saturate(1- i.uvFalloff.x);
                 fixed shadow = tex2Dproj(_MainTex,UNITY_PROJ_COORD(i.uvShadow));
                 return shadow* _Color * fade;
@@ -68,5 +70,5 @@
         }
        
     }
-    FallBack "Diffuse"
+//    FallBack "Diffuse"
 }
