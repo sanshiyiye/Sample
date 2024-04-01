@@ -10,6 +10,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using System.Text;
+using FrameWork.Runtime;
 using UnityEngine;
 
 public class PlayerInfo : BaseSerializedObject

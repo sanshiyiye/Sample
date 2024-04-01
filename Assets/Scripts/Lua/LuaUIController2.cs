@@ -9,7 +9,6 @@ using System;
 using System.IO;
 using Core.Log;
 using FrameWork.Runtime;
-using FrameWork.UI;
 using UnityEngine;
 using XLua;
 using Logger = Core.Log.Logger;

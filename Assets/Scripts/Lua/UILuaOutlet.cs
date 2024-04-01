@@ -9,7 +9,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 #if UNITY_EDITOR
-[RequireComponent(typeof(FrameWork.UI.UIWindowAsset))]
+[RequireComponent(typeof(FrameWork.Runtime.UIWindowAsset))]
 [DisallowMultipleComponent]
 #endif
 public class UILuaOutlet : MonoBehaviour

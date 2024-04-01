@@ -5,9 +5,7 @@
 * @description
 */
 
-using FrameWork.UI;
-using FrameWork.Utils;
-using Packages.FrameWork.Component;
+using FrameWork.Runtime;
 using UnityEngine;
 using UnityEngine.UI;
 

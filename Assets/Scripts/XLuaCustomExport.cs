@@ -11,9 +11,6 @@ using System.Reflection;
 using Core;
 using Core.Event;
 using FrameWork.Runtime;
-using FrameWork.Runtime.Resource;
-using FrameWork.UI.Lua;
-using FrameWork.Utils;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
@@ -81,18 +78,18 @@ public static class XLuaCustomExport
         typeof(System.Action<GameObject>),
         typeof(UnityEngine.Events.UnityAction<Vector2>),
         typeof(Action<PointerEventData>),
-        typeof(FrameWork.Runtime.Resource.ResourceModule.CKSpriteAtlasLoaderDelegate),
+        typeof(FrameWork.Runtime.ResourceModule.CKSpriteAtlasLoaderDelegate),
         typeof(UnityEngine.Events.UnityAction<UnityEngine.EventSystems.BaseEventData>),
         typeof(UnityEngine.Events.UnityAction<string>),
         typeof(Action<Sprite>),
-        typeof(FrameWork.Runtime.Resource.AbstractResourceLoader.LoaderDelgate),
+        typeof(FrameWork.Runtime.AbstractResourceLoader.LoaderDelgate),
         typeof(UnityEngine.Events.UnityAction),
         typeof(UnityEngine.Events.UnityAction<bool>),
         typeof(UnityEngine.Events.UnityAction<Vector2>),
         typeof(UnityEngine.Events.UnityAction<string>),
         typeof(System.Collections.IEnumerator),
         typeof(System.Action<Transform,int>),
-        typeof(System.Action<FrameWork.UI.UIController, object[]>),
+        typeof(System.Action<FrameWork.Runtime.UIController, object[]>),
         typeof(UnityAction<string,string>),
     };
 
@@ -107,7 +104,6 @@ public static class XLuaCustomExport
     [ReflectionUse]
     public static List<Type> LuaCallCSharpByRelfect = new List<Type>()
     {
-        typeof(FrameWork.UI.UIModule),
         typeof(GameObjectExtensions),
 
     };
@@ -121,13 +117,12 @@ public static class XLuaCustomExport
         typeof(System.Action<GameObject>),
         typeof(LuaUIController),
 
-        // typeof(FrameWork.Runtime.Resource.ResourceModule.CKSpriteAtlasLoaderDelegate),
+        // typeof(FrameWork.Runtime.ResourceModule.CKSpriteAtlasLoaderDelegate),
         //typeof(InstanceAssetLoader),
         typeof(AssetBundleLoader),
         // typeof(SceneLoader),
         typeof(AssetBundle),
-        typeof(FrameWork.UI.UIModule),
-        typeof(FrameWork.Runtime.Resource.ResourceModule),
+        typeof(FrameWork.Runtime.ResourceModule),
         typeof(LuaModule),
         typeof(UnityEngine.Physics),
 #if UNITY_2018_1_OR_NEWER

@@ -11,7 +11,6 @@ using System.IO;
 using System.Text;
 using Core;
 using FrameWork.Runtime;
-using FrameWork.Runtime.Resource;
 using XLua;
 using XLua.LuaDLL;
 using LuaSvr = XLua.LuaEnv;

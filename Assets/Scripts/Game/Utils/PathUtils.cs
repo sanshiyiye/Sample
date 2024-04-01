@@ -5,7 +5,7 @@
 * @description
 */
 
-public class PathUtils
+public partial class PathUtils
 {
     /// <summary>
     /// 获取assetbundle的name

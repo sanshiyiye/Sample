@@ -22,7 +22,7 @@ public class UILuaOutletEditor : Editor
     static UILuaOutletEditor()
     {
         EditorApplication.hierarchyWindowItemOnGUI += HierarchyItemCB;
-        UIWindowAssetEditor.CustomInspectorGUIAfter += (FrameWork.UI.UIWindowAsset target) => {
+        UIWindowAssetEditor.CustomInspectorGUIAfter += (FrameWork.Runtime.UIWindowAsset target) => {
             if (target.gameObject.GetComponent<UILuaOutlet>() == null)
             {
                 if (GUILayout.Button("Add UILuaOutlet"))
