@@ -12,6 +12,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading;
+using System.Threading.Tasks;
 using Core.Log;
 using FrameWork.Runtime;
 using Unity.Collections;
@@ -28,38 +29,31 @@ namespace Assets.Scripts.Test
 {
     public class LoadAsset : MonoBehaviour
     {
-        private  void Start()
+        private async  Task Start()
         {
             Core.Log.Logger.init(true,3,new Dictionary<LogType, ILogHandler>()
             {
                 {Core.Log.LogType.SYS,new DefaultLogHandler()} 
             });
-            // TestSerilize();
-            // TestAnchor();
-            for (int i = 0; i < 10000; i++)
+            
+            BetterStreamingAssets.Initialize();
+
+            BetterStreamingAssets.CompressedStreamingAssetFound += BetterStreamingAssets_CompressedStreamingAssetFound;
+
+            // BetterStreamingAssets.LoadAssetBundle("test");
+            if (BetterStreamingAssets.FileExists("Cube.prefab"))
             {
-                TestHttp();
+                var a = BetterStreamingAssets.ReadAllBytes("Cube.prefab");
             }
+            //await request.isDone;
+            Debug.Log("111");
+        }
+        private bool BetterStreamingAssets_CompressedStreamingAssetFound(string arg)
+        {
+            Debug.Log("====BetterStreamingAssets_CompressedStreamingAssetFound===="+arg);
+            return false;
         }
 
-        
-        private void TestHttp()
-        {
-            HttpClient.HttpInfo info = new HttpClient.HttpInfo("http://www.baidu.com", "POST",new string[]{"wd=unity","rsv_spt=1"});
-            // HttpClient.Instance.Send("http://www.baidu.com","name",null,null);
-            HttpClient.Instance.SendRequest(info);
-            
-        }
-        
-        private void TestAnchor()
-        {
-            var img = this.transform.Find("Canvas/Image");
-            var rect = img.GetComponent<RectTransform>();
-            Debug.Log(rect.anchorMin);
-            Debug.Log(rect.anchorMin);
-        }
-        
-        
         private void TestSerilize()
         {
            

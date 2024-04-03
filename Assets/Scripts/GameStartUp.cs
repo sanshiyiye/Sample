@@ -4,9 +4,6 @@ using System.Reflection;
 using Core;
 using Core.Log;
 using FrameWork.Runtime;
-// using FrameWork.Runtime;
-// using FrameWork.UI;
-using Sirenix.OdinInspector;
 using UnityEngine;
 using AppConfig = Core.AppConfig;
 using ILogHandler = Core.Log.ILogHandler;
@@ -17,17 +14,9 @@ using LogType = Core.Log.LogType;
 
 public class GameStartUp : BaseGame
 {
-    [ReadOnly]
     public bool isUpdate = false; // Start is called before the first frame update
-    [Title("GameStart属性展示",bold: false)]
     [Delayed]
-    [LabelText("玩家ID")]
-    [PropertySpace]
-    [ValidateInput("CheckDelayValue","",InfoMessageType.Error)]
-    [DetailedInfoBox("test","Please Touch me",InfoMessageType.Info)]
     public int DelayValue;
-    [ShowInInspector]
-    [GUIColor(1,0,.5f)]
      public int DelayProperty { get; set; }
     // IEnumerator loadDLL()
     // {
@@ -44,7 +33,7 @@ public class GameStartUp : BaseGame
     //     
     // }
 
-    public bool CheckDelayValue(int value,ref string ErroeMessage, ref InfoMessageType? type )
+    public bool CheckDelayValue(int value,ref string ErroeMessage )
     {
         ErroeMessage = "DelayValue is error";
         return value > 100;
@@ -60,10 +49,10 @@ public class GameStartUp : BaseGame
 #if xLua 
         modules.Add(LuaModule.getInstance());
 #endif
-        /// 添加游戏自己的Modules
-        ///
         /// 
-         ConfigMgr.getInstance().Init();
+        /// 添加游戏自己的Modules
+        /// 
+        ConfigMgr.getInstance().Init();
         return modules;
     }
 
@@ -104,7 +93,7 @@ public class GameStartUp : BaseGame
     }
     
     
-    public void OnApplicationQuit()
+    public override void OnApplicationQuit()
     {
         
     }

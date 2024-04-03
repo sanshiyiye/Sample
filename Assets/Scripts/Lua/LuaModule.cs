@@ -71,8 +71,13 @@ public class LuaModule : Singleton<LuaModule> ,IModule
             //TODO 启动luaUpdate
             
         }
-        
-           
+
+        public void Destroy()
+        {
+            
+        }
+
+
         public void ClearData()
         {
             ClearAllCache();

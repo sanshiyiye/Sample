@@ -24,25 +24,25 @@
             
             </summary>
         </member>
-        <member name="T:Core.Event.CallBack">
+        <member name="T:Core.CallBack">
             <summary>
             
             </summary>
         </member>
-        <member name="T:Core.Event.CallBack`1">
+        <member name="T:Core.CallBack`1">
             <summary>
             
             </summary>
             <typeparam name="T"></typeparam>
         </member>
-        <member name="T:Core.Event.CallBack`2">
+        <member name="T:Core.CallBack`2">
             <summary>
             
             </summary>
             <typeparam name="T"></typeparam>
             <typeparam name="T1"></typeparam>
         </member>
-        <member name="T:Core.Event.CallBack`3">
+        <member name="T:Core.CallBack`3">
             <summary>
             
             </summary>
@@ -50,54 +50,59 @@
             <typeparam name="T1"></typeparam>
             <typeparam name="T2"></typeparam>
         </member>
-        <member name="T:Core.Event.CallBack`4">
+        <member name="T:Core.CallBack`4">
             <summary>
             
             </summary>
+            <typeparam name="T"></typeparam>
+            <typeparam name="T1"></typeparam>
+            <typeparam name="T2"></typeparam>
+            <typeparam name="T3"></typeparam>
+        </member>
+        <member name="T:Core.CallBackR`1">
+            <summary>
+            
+            </summary>
+            <typeparam name="R"></typeparam>
+        </member>
+        <member name="T:Core.CallBackR`2">
+            <summary>
+            
+            </summary>
+            <typeparam name="R"></typeparam>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:Core.CallBackR`3">
+            <summary>
+            
+            </summary>
+            <typeparam name="R"></typeparam>
+            <typeparam name="T"></typeparam>
+            <typeparam name="T1"></typeparam>
+        </member>
+        <member name="T:Core.CallBackR`4">
+            <summary>
+            
+            </summary>
+            <typeparam name="R"></typeparam>
+            <typeparam name="T"></typeparam>
+            <typeparam name="T1"></typeparam>
+            <typeparam name="T2"></typeparam>
+        </member>
+        <member name="T:Core.CallBackR`5">
+            <summary>
+            
+            </summary>
+            <typeparam name="R"></typeparam>
             <typeparam name="T"></typeparam>
             <typeparam name="T1"></typeparam>
             <typeparam name="T2"></typeparam>
             <typeparam name="T3"></typeparam>
         </member>
-        <member name="T:Core.Event.CallBackR`1">
+        <member name="T:Core.XEvent">
             <summary>
-            
+            Event
             </summary>
-            <typeparam name="R"></typeparam>
-        </member>
-        <member name="T:Core.Event.CallBackR`2">
-            <summary>
-            
-            </summary>
-            <typeparam name="R"></typeparam>
-            <typeparam name="T"></typeparam>
-        </member>
-        <member name="T:Core.Event.CallBackR`3">
-            <summary>
-            
-            </summary>
-            <typeparam name="R"></typeparam>
-            <typeparam name="T"></typeparam>
-            <typeparam name="T1"></typeparam>
-        </member>
-        <member name="T:Core.Event.CallBackR`4">
-            <summary>
-            
-            </summary>
-            <typeparam name="R"></typeparam>
-            <typeparam name="T"></typeparam>
-            <typeparam name="T1"></typeparam>
-            <typeparam name="T2"></typeparam>
-        </member>
-        <member name="T:Core.Event.CallBackR`5">
-            <summary>
-            
-            </summary>
-            <typeparam name="R"></typeparam>
-            <typeparam name="T"></typeparam>
-            <typeparam name="T1"></typeparam>
-            <typeparam name="T2"></typeparam>
-            <typeparam name="T3"></typeparam>
         </member>
         <member name="T:Core.GameException">
             <summary>
@@ -456,6 +461,11 @@
             </summary>
         </member>
         <member name="M:Core.IModule.Init">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Core.IModule.Destroy">
             <summary>
             
             </summary>
