@@ -15,7 +15,7 @@ namespace Cysharp.Threading.Tasks
     {
         #region AsyncOperation
 
-#if !UNITY_2023_1_OR_NEWER
+#if !UNITY_2023_1_ORP_NEWER
         // from Unity2023.1.0a15, AsyncOperationAwaitableExtensions.GetAwaiter is defined in UnityEngine.
 
         public static AsyncOperationAwaiter GetAwaiter(this AsyncOperation asyncOperation)
