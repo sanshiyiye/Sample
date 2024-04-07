@@ -97,7 +97,7 @@ public class LuaModule : Singleton<LuaModule> ,IModule
         [MonoPInvokeCallback(typeof(lua_CSFunction))]
         internal static int LuaImport(RealStatePtr L)
         {
-            LuaModule luaModule = getInstance();
+            LuaModule luaModule = GetInstance();
 
             string fileName = Lua.lua_tostring(L, 1);
             var obj = luaModule.Import(fileName);

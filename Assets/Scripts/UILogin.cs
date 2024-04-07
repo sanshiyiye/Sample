@@ -26,12 +26,12 @@ public class UILogin : UIController
     {
         // UIModule.getInstance().CloseWindow("UILogin");
         // UIModule.getInstance().DestroyWindow("UILogin",true);
-        UIModule.getInstance().OpenWindow("UIBillboard");
+        UIModule.GetInstance().OpenWindow("UIBillboard");
     }
 
     public void OpenLogin(MonoBehaviour go)
     {
-        UIModule.getInstance().CloseWindow("UIBillboard");
-        UIModule.getInstance().OpenWindow("UILogin");
+        UIModule.GetInstance().CloseWindow("UIBillboard");
+        UIModule.GetInstance().OpenWindow("UILogin");
     }
 }

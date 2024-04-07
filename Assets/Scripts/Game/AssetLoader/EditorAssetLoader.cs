@@ -35,7 +35,7 @@ public class EditorAssetLoader : IAssetLoader
         {
             Debug.LogError(" Asset not found - path:"+path);
         }
-        AssetManager.Instance.PushCache(absolutepath,obj);
+        AssetManager.GetInstance().PushCache(absolutepath,obj);
         return obj as T;
         
 #endif

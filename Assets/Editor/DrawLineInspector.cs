@@ -7,13 +7,14 @@
 
 using System;
 using System.Collections.Generic;
+// using FrameWork.Editor;
 using FrameWork.Runtime;
 using UnityEditor;
 using UnityEngine;
 
 namespace Assets.Scripts.Test
 {
-    [CustomEditor(typeof(NetProbe))]
+    // [CustomEditor(typeof(NetProbe))]
     public class DrawLineInspector : Editor
     {
         private Material material;

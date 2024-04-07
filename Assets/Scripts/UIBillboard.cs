@@ -20,6 +20,6 @@ public class UIBillboard : UIController
         }
         public void OnClick(MonoBehaviour go)
         {
-            UIModule.getInstance().CloseWindow("UIBillboard");
+            UIModule.GetInstance().CloseWindow("UIBillboard");
         }
     }

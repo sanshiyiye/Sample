@@ -132,7 +132,7 @@ public  class LuaUIController : UIController
             var relPath = UILuaPath;
             object scriptResult;
             
-            if (!LuaModule.getInstance().TryImport(relPath, out scriptResult))
+            if (!LuaModule.GetInstance().TryImport(relPath, out scriptResult))
             {
                 if (showWarn)
                     Logger.Info(LogLevel.GAME ,"Import UI Lua Script failed: {0}", relPath);
@@ -252,7 +252,7 @@ public  class LuaUIController : UIController
         private void ClearLuaTableCache()
         {
             _luaTable = null;
-            LuaModule.getInstance().ClearCache(UILuaPath);
+            LuaModule.GetInstance().ClearCache(UILuaPath);
             
         }
 }

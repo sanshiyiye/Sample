@@ -475,7 +475,7 @@
             
             </summary>
         </member>
-        <member name="M:Core.Singleton`1.getInstance">
+        <member name="M:Core.Singleton`1.GetInstance">
             <summary>
             
             </summary>

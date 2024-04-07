@@ -13,38 +13,33 @@ public class MonoSingleton<T> : MonoBehaviour where T : MonoSingleton<T>
 
      private bool m_bInit = false;
 
-     public static T Instance
+     public static T GetInstance()
      {
-          get
+          if (_instance == null)
           {
-               if (_instance == null)
+               GameObject obj = GameObject.Find(typeof(T).Name);
+               if (obj == null)
                {
-                    GameObject obj = GameObject.Find(typeof(T).Name);
-                    if (obj == null)
-                    {
-                         obj = new GameObject(typeof(T).Name);
-                         _instance = obj.AddComponent<T>();
-                    }
-                    else
-                    {
-                         _instance = obj.GetComponent<T>();
-                         if (_instance == null)
-                         {
-                              obj.AddComponent<T>();
-                         }
-
-                         if (!_instance.m_bInit)
-                         {
-                              _instance.Init();
-                         }
-                         
-                    }
+                    obj = new GameObject(typeof(T).Name);
+                    _instance = obj.AddComponent<T>();
                }
-               return _instance;
-          }
-          
-     }
+               else
+               {
+                    _instance = obj.GetComponent<T>();
+                    if (_instance == null)
+                    {
+                         obj.AddComponent<T>();
+                    }
 
+                    if (!_instance.m_bInit)
+                    {
+                         _instance.Init();
+                    }
+                         
+               }
+          }
+          return _instance;
+     }
      public virtual void Init()
      {
           DontDestroyOnLoad(_instance.gameObject);

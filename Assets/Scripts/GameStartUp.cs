@@ -47,12 +47,12 @@ public class GameStartUp : BaseGame
         var modules =  base.CreateModules();
         
 #if xLua 
-        modules.Add(LuaModule.getInstance());
+        modules.Add(LuaModule.GetInstance());
 #endif
         /// 
         /// 添加游戏自己的Modules
         /// 
-        ConfigMgr.getInstance().Init();
+        ConfigMgr.GetInstance().Init();
         return modules;
     }
 
@@ -88,7 +88,7 @@ public class GameStartUp : BaseGame
         
         Logger.Info(LogLevel.GAME,"=====OnStart=======");
         Logger.Trace("test trace !");
-        UIModule.getInstance().OpenWindow("UILogin",888);
+        UIModule.GetInstance().OpenWindow("UILogin",888);
         
     }
     

@@ -20,6 +20,7 @@ using Unity.Collections.LowLevel.Unsafe;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Profiling;
+using YooAsset;
 using Debug = UnityEngine.Debug;
 using ILogHandler = Core.Log.ILogHandler;
 using Logger = Core.Log.Logger;
@@ -38,15 +39,15 @@ namespace Assets.Scripts.Test
             
             BetterStreamingAssets.Initialize();
 
-            BetterStreamingAssets.CompressedStreamingAssetFound += BetterStreamingAssets_CompressedStreamingAssetFound;
-
-            // BetterStreamingAssets.LoadAssetBundle("test");
-            if (BetterStreamingAssets.FileExists("Cube.prefab"))
+            YooAssets.Initialize();
+            
+            var resourcePackage = YooAssets.TryGetPackage("MainBuildSetting");
+            if (resourcePackage == null)
             {
-                var a = BetterStreamingAssets.ReadAllBytes("Cube.prefab");
+                
             }
-            //await request.isDone;
-            Debug.Log("111");
+            // var operation = resourcePackage.LoadAssetSync<GameAssemblyManifest>(configuration.assemblyManifestAssetKey);
+            // var manifest = operation.GetAssetObject<GameAssemblyManifest>();
         }
         private bool BetterStreamingAssets_CompressedStreamingAssetFound(string arg)
         {

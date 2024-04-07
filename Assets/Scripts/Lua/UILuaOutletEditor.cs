@@ -6,7 +6,7 @@
 */
 #if UNITY_EDITOR
 using System.Collections.Generic;
-using FrameWork.Editor;
+// using FrameWork.Editor;
 using UnityEditor;
 using UnityEngine;
 
@@ -22,16 +22,16 @@ public class UILuaOutletEditor : Editor
     static UILuaOutletEditor()
     {
         EditorApplication.hierarchyWindowItemOnGUI += HierarchyItemCB;
-        UIWindowAssetEditor.CustomInspectorGUIAfter += (FrameWork.Runtime.UIWindowAsset target) => {
-            if (target.gameObject.GetComponent<UILuaOutlet>() == null)
-            {
-                if (GUILayout.Button("Add UILuaOutlet"))
-                {
-                    target.gameObject.AddComponent<UILuaOutlet>();
-
-                }
-            }
-        };
+        // UIWindowAssetEditor.CustomInspectorGUIAfter += (FrameWork.Runtime.UIWindowAsset target) => {
+        //     if (target.gameObject.GetComponent<UILuaOutlet>() == null)
+        //     {
+        //         if (GUILayout.Button("Add UILuaOutlet"))
+        //         {
+        //             target.gameObject.AddComponent<UILuaOutlet>();
+        //
+        //         }
+        //     }
+        // };
     }
 
     private static void HierarchyItemCB(int instanceid, Rect selectionrect)

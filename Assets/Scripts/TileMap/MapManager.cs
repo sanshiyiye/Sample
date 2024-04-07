@@ -123,9 +123,9 @@ public class MapManager : Singleton<MapManager>
         public void LoadMapData()
         {
             //TODO load配置资源
-            AddTilesTable("BundleResources/Config/Tiles.txt");
-            AddPrefabTable("BundleResources/Config/Prefabs.txt");
-            AddMapTable("BundleResources/Config/Maps.txt");
+            AddTilesTable("BundleResources/Config/Tilemap/Tiles.txt");
+            AddPrefabTable("BundleResources/Config/Tilemap/Prefabs.txt");
+            AddMapTable("BundleResources/Config/Tilemap/Maps.txt");
         }
         /// <summary>
         /// 
