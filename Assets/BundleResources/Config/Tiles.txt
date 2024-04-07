@@ -1,9 +1,0 @@
-keys 2
-ID
-path
-#0
-0
-Tiles/plains-sliced_01
-#1
-1
-Tiles/plains-sliced_02
