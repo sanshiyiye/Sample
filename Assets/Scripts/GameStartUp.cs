@@ -55,16 +55,12 @@ public class GameStartUp : BaseGame
         ConfigMgr.GetInstance().Init();
         return modules;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 
     public override void OnInit()
     {
         // Logger.AddLogHandler(LogType.SYS ,new DefaultLogHandler());
+        base.OnInit();
         Logger.init(true,3,new Dictionary<LogType, ILogHandler>()
         {
             {LogType.SYS,new DefaultLogHandler()} 
